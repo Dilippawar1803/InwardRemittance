@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HMHS- eBenefitSyncTAF UI Test Automation"
+	configfailurepolicy="continue">
+
+
+	<!-- Suite -->
+	<!-- If required try retry anyalzer listeners -->
+	<listeners>
+		<!-- <listener class-name="com.generic.AnnotationTransformer" /> -->
+		<listener class-name="com.generic.CustomReporter" />
+		<listener class-name="com.generic.HtmlCustomReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="SMOKE TEST SUITE_1">
+		<classes>	
+		
+		<class name="com.scripts.foundationTemplate.PreRequisiteTestDataTest" />
+		<class name="com.scripts.foundationTemplate.FoundationTemplateRxTest" />
+		<class name="com.scripts.account.AccountTest" />
+		<class name="com.scripts.foundationTemplate.FoundationTemplateDentalTest" />
+		<class name="com.scripts.myTaskAndCurrentLock.MyTaskAndCurrentLockTest" />
+		<class name="com.scripts.dashboard.DashboardTest" />
+		<class name="com.scripts.notification.NotificationTest" />
+			
+		</classes>
+	</test>
+</suite>

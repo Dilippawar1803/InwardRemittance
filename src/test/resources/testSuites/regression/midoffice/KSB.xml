@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="HMHS- eBenefitSyncTAF UI Test Automationn"
+	configfailurepolicy="continue">
+
+
+	<!-- Suite -->
+	<!-- If required try retry anyalzer listeners -->
+	<listeners>
+		<!-- <listener class-name="com.generic.AnnotationTransformer" /> -->
+		<listener class-name="com.generic.CustomReporter" />
+		<listener class-name="com.generic.HtmlCustomReporter" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<test name="KhushbuT TEST SUITE">
+		<classes>
+			<!-- <class name="com.scripts.login.LoginLogoutTest"/> -->
+			<class name="com.scripts.globalUpdate.HmhsGlobalUpdateTest" />
+			<class name="com.scripts.settings.HmhsSettingsTest" />
+			<class name="com.scripts.collateralEngine.HmhsCollateralEngineTest" />
+			<class name="com.scripts.foundationTemplate.HmhsFoundationTemplate_Set_5_Test" />
+			<class name="com.scripts.reportingCenter.HmhsReportingCenter_Set_1_Test" />
+			
+		</classes>
+	</test>
+
+</suite>
