@@ -1,0 +1,137 @@
+{
+  "time" : {
+    "start" : 1663776191306,
+    "stop" : 1663776509418,
+    "duration" : 318112
+  },
+  "testSuites" : [ {
+    "uid" : "5949d6f455f3735e",
+    "name" : "Kotak InwardRemittance",
+    "title" : "Kotak InwardRemittance : SMOKE TEST SUITE",
+    "time" : {
+      "start" : 1663776191306,
+      "stop" : 1663776509418,
+      "duration" : 318112
+    },
+    "statistic" : {
+      "total" : 10,
+      "passed" : 7,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 3,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "e8db69017253f8c3",
+      "name" : "TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification",
+      "title" : "TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification",
+      "time" : {
+        "start" : 1663776191306,
+        "stop" : 1663776283384,
+        "duration" : 92078
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3f3422f734297d7e",
+      "name" : "TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions",
+      "title" : "TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions",
+      "time" : {
+        "start" : 1663776290367,
+        "stop" : 1663776319496,
+        "duration" : 29129
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "116d9bdf448aa678",
+      "name" : "TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable",
+      "title" : "TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable",
+      "time" : {
+        "start" : 1663776324925,
+        "stop" : 1663776332423,
+        "duration" : 7498
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a227401d9c6d6f5d",
+      "name" : "TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility",
+      "title" : "TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility",
+      "time" : {
+        "start" : 1663776337910,
+        "stop" : 1663776347978,
+        "duration" : 10068
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "f142412037cf84c8",
+      "name" : "TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction",
+      "title" : "TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction",
+      "time" : {
+        "start" : 1663776353452,
+        "stop" : 1663776366817,
+        "duration" : 13365
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d2a24b6903150ef2",
+      "name" : "TCID_FCCCGIRM0026_verifyAuditDetailsForRemittanceCreditTransaction",
+      "title" : "TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction",
+      "time" : {
+        "start" : 1663776372269,
+        "stop" : 1663776399379,
+        "duration" : 27110
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9d11e77061d12e08",
+      "name" : "TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation",
+      "title" : "TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation",
+      "time" : {
+        "start" : 1663776404725,
+        "stop" : 1663776425918,
+        "duration" : 21193
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a53d18a12b8dfd1",
+      "name" : "TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI",
+      "title" : "TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI",
+      "time" : {
+        "start" : 1663776431467,
+        "stop" : 1663776454069,
+        "duration" : 22602
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "566084e7d2ed85fd",
+      "name" : "TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI",
+      "title" : "TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI",
+      "time" : {
+        "start" : 1663776459356,
+        "stop" : 1663776481707,
+        "duration" : 22351
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "85021387a1e326f9",
+      "name" : "TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu",
+      "title" : "TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu",
+      "time" : {
+        "start" : 1663776487022,
+        "stop" : 1663776509418,
+        "duration" : 22396
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    } ]
+  } ]
+}

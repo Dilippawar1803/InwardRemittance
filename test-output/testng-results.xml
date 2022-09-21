@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Step Description--> open new URL ]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Open AUT URL -----> https://nbuat.kotak.com/knb2/]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Set user name|| Input Value : 105360700]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click 'Next' button]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Set password|| Input Value : Quality123]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click 'SecureLogin' button]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Verify user login is successfull by using page title || Expected Result : Kotak Net Banking || Actual Result : Kotak Net Banking]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click 'Trade Link' ]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click 'Trade Link' ]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click Edit Transactions]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> clickFTInquiry]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click Next Button]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On type]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On Option]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Verify Disposal Value]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Verify Feild mandatory ]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Verify Feild mandatory ]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On type]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On Option]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Verify Disposal Value]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="161431" started-at="2022-09-21T18:06:03Z" finished-at="2022-09-21T18:08:44Z">
+    <groups>
+      <group name="InwardRemittance_Verification">
+        <method signature="InwardRemittanceTest.FCC_CGIRM0017verifySubProductDisposalInstructions()[pri:8, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@55071497]" name="FCC_CGIRM0017verifySubProductDisposalInstructions" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+      </group> <!-- InwardRemittance_Verification -->
+    </groups>
+    <test name="Default test" duration-ms="161431" started-at="2022-09-21T18:06:03Z" finished-at="2022-09-21T18:08:44Z">
+      <class name="com.Script.kotak.fcc.product.InwardRemittanceTest">
+        <test-method status="PASS" signature="initializeEnvironment()[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@55071497]" name="initializeEnvironment" is-config="true" duration-ms="12693" started-at="2022-09-21T23:36:03Z" finished-at="2022-09-21T23:36:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeEnvironment -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@55071497]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5294" started-at="2022-09-21T23:36:15Z" finished-at="2022-09-21T23:36:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0017verifySubProductDisposalInstructions()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="PASS" signature="FCC_CGIRM0017verifySubProductDisposalInstructions()[pri:8, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@55071497]" name="FCC_CGIRM0017verifySubProductDisposalInstructions" duration-ms="129793" started-at="2022-09-21T23:36:21Z" finished-at="2022-09-21T23:38:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> open new URL ]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Open AUT URL -----> https://nbuat.kotak.com/knb2/]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Set user name|| Input Value : 105360700]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click 'Next' button]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Set password|| Input Value : Quality123]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click 'SecureLogin' button]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Verify user login is successfull by using page title || Expected Result : Kotak Net Banking || Actual Result : Kotak Net Banking]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click 'Trade Link' ]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click 'Trade Link' ]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click Edit Transactions]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> clickFTInquiry]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click Next Button]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On type]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On Option]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Verify Disposal Value]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Verify Feild mandatory ]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Verify Feild mandatory ]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On type]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On Option]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Verify Disposal Value]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FCC_CGIRM0017verifySubProductDisposalInstructions -->
+        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@55071497]" name="tearDownEnvironment" is-config="true" duration-ms="13496" started-at="2022-09-21T23:38:31Z" finished-at="2022-09-21T23:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownEnvironment -->
+      </class> <!-- com.Script.kotak.fcc.product.InwardRemittanceTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

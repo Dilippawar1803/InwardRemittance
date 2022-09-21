@@ -72,7 +72,8 @@ public class CommonFlow {
 	}
 	public void navigateToDIInwardRemittance() {
 		objPojo.getObjWrapperFunctions().switchToFrameUsingIframeElement(loc_Iframe);
-		objPojo.getObjUtilities().logReporter("Click Inward Remittance",
+		objPojo.getObjWrapperFunctions().waitFor(10);
+		objPojo.getObjUtilities().logReporter("Click DI Inward Remittance",
 				objPojo.getObjWrapperFunctions().click(loc_Remittance));
 		objPojo.getObjUtilities().logReporter("Click DI Inward Remittance",
 				objPojo.getObjWrapperFunctions().click(loc_DIInwardRemittance));

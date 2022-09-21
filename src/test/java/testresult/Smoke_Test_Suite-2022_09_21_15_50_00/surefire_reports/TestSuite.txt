@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 407.029 sec <<< FAILURE! - in TestSuite
+TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 48.757 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions(InwardRemittanceTest.java:104)
+
+TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 22.482 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI(InwardRemittanceTest.java:195)
+
+TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 22.562 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI(InwardRemittanceTest.java:209)
+
+TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 23.087 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu(InwardRemittanceTest.java:227)
+

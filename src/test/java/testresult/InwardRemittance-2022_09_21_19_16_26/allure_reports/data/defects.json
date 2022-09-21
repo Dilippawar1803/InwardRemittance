@@ -1,0 +1,113 @@
+{
+  "defectsList" : [ {
+    "title" : "Product defects",
+    "status" : "FAILED",
+    "defects" : [ {
+      "uid" : "d20d9755ef784d05",
+      "failure" : {
+        "message" : "AssertionError: expected [true] but found [false]",
+        "stackTrace" : "java.lang.AssertionError: expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\n\tat org.testng.Assert.assertTrue(Assert.java:42)\n\tat org.testng.Assert.assertTrue(Assert.java:52)\n\tat com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)\n\tat com.generic.Utilities.logReporter(Utilities.java:341)\n\tat com.kotak.fcc.product.InwardRemittance.IRDisposalInstructionDetails.verifySubProductDisposal(IRDisposalInstructionDetails.java:70)\n\tat com.view.kotak.fcc.product.InwardRemittanceView.verifySubProductDisposal_1(InwardRemittanceView.java:36)\n\tat com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0017verifySubProductDisposalInstructions(InwardRemittanceTest.java:213)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\n\tat org.testng.TestRunner.run(TestRunner.java:632)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\n\tat org.testng.TestNG.run(TestNG.java:1064)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\n"
+      },
+      "testCases" : [ {
+        "uid" : "63f3ebb04654ea2b",
+        "name" : "FCC_CGIRM0017verifySubProductDisposalInstructions",
+        "title" : "FCC_CG_IRM_0017_verifySubProductDisposalInstructions",
+        "time" : {
+          "start" : 1663788077361,
+          "stop" : 1663788127016,
+          "duration" : 49655
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      }, {
+        "uid" : "128df2bbf9f5bb65",
+        "name" : "FCC_CGIRM0019verifyFieldValidationPurposeType",
+        "title" : "FCC_CG_IRM_0019_verifyFieldValidationPurposeType",
+        "time" : {
+          "start" : 1663788132865,
+          "stop" : 1663788181717,
+          "duration" : 48852
+        },
+        "severity" : "NORMAL",
+        "status" : "FAILED"
+      } ]
+    } ]
+  }, {
+    "title" : "Test defects",
+    "status" : "BROKEN",
+    "defects" : [ {
+      "uid" : "2b099b30cff8cf2b",
+      "failure" : {
+        "message" : "NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'\nSystem info: host: 'DESKTOP-QM91UED', ip: '192.168.244.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\Dilip\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3b8fc49d89dfba42d3ec82f066f63274",
+        "stackTrace" : "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'\nSystem info: host: 'DESKTOP-QM91UED', ip: '192.168.244.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\Dilip\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3b8fc49d89dfba42d3ec82f066f63274\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)\n\tat com.generic.Utilities.takeScreenShot(Utilities.java:614)\n\tat com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:398)\n\tat com.generic.Utilities.logReporter(Utilities.java:341)\n\tat com.kotak.fcc.product.InwardRemittance.IR.clickEditTransactions(IR.java:76)\n\tat com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance(InwardRemittanceTest.java:256)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\n\tat org.testng.TestRunner.run(TestRunner.java:632)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\n\tat org.testng.TestNG.run(TestNG.java:1064)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\n"
+      },
+      "testCases" : [ {
+        "uid" : "3c90198de1a6e5f5",
+        "name" : "FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance",
+        "title" : "FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance",
+        "time" : {
+          "start" : 1663788187009,
+          "stop" : 1663788223130,
+          "duration" : 36121
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "6187f7c6b9b68bdf",
+        "name" : "FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance",
+        "title" : "FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance",
+        "time" : {
+          "start" : 1663788228536,
+          "stop" : 1663788248697,
+          "duration" : 20161
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "1a9335d6bedecc68",
+        "name" : "FCC_CGIRM0023verifyInwardRemittanceSwiftDetails",
+        "title" : "FCC_CGIRM0023verifyInwardRemittanceSwiftDetails",
+        "time" : {
+          "start" : 1663788254070,
+          "stop" : 1663788284256,
+          "duration" : 30186
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "74d6b28e8c27047",
+        "name" : "TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI",
+        "title" : "TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI",
+        "time" : {
+          "start" : 1663788289644,
+          "stop" : 1663788309802,
+          "duration" : 20158
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "9665bb9162552a15",
+        "name" : "TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI",
+        "title" : "TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI",
+        "time" : {
+          "start" : 1663788315060,
+          "stop" : 1663788335212,
+          "duration" : 20152
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "6e8b0149dd6ef8c5",
+        "name" : "TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu",
+        "title" : "TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu",
+        "time" : {
+          "start" : 1663788340545,
+          "stop" : 1663788360807,
+          "duration" : 20262
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      } ]
+    } ]
+  } ]
+}

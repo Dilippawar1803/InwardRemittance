@@ -1,0 +1,192 @@
+{
+  "time" : {
+    "start" : 1663786505483,
+    "stop" : 1663786955727,
+    "duration" : 450244
+  },
+  "testSuites" : [ {
+    "uid" : "7de7ae066babf19b",
+    "name" : "Kotak InwardRemittance",
+    "title" : "Kotak InwardRemittance : SMOKE TEST SUITE",
+    "time" : {
+      "start" : 1663786505483,
+      "stop" : 1663786955727,
+      "duration" : 450244
+    },
+    "statistic" : {
+      "total" : 15,
+      "passed" : 8,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 3,
+      "broken" : 4
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "f2b1fe001e336d0",
+      "name" : "TCIDFCCCGIRM001MessageToBankMenuOptionsVerification",
+      "title" : "TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification",
+      "time" : {
+        "start" : 1663786505483,
+        "stop" : 1663786601062,
+        "duration" : 95579
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "756fd8920737ec44",
+      "name" : "TCID_FCCCGIRM0008VerifySearchCriteriaTransactions",
+      "title" : "TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions",
+      "time" : {
+        "start" : 1663786606087,
+        "stop" : 1663786644594,
+        "duration" : 38507
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "c5b81e829256f563",
+      "name" : "TCID_FCCCGIRM0010VerifyMenuOptionsAvailable",
+      "title" : "TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable",
+      "time" : {
+        "start" : 1663786652072,
+        "stop" : 1663786669833,
+        "duration" : 17761
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "73f6cf2f39c11d4b",
+      "name" : "TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility",
+      "title" : "TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility",
+      "time" : {
+        "start" : 1663786675257,
+        "stop" : 1663786695504,
+        "duration" : 20247
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2b653a9778d1a64d",
+      "name" : "TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction",
+      "title" : "TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction",
+      "time" : {
+        "start" : 1663786700975,
+        "stop" : 1663786713252,
+        "duration" : 12277
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ce21f896ffc99cb7",
+      "name" : "TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction",
+      "title" : "TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction",
+      "time" : {
+        "start" : 1663786718672,
+        "stop" : 1663786740198,
+        "duration" : 21526
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5cfdbb5d9ab24bfb",
+      "name" : "TCID_FCCCGIRM0034verifyTransactionCopyValidation",
+      "title" : "TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation",
+      "time" : {
+        "start" : 1663786745481,
+        "stop" : 1663786786076,
+        "duration" : 40595
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "fe60018fd3d0f1fd",
+      "name" : "FCC_CGIRM0017verifySubProductDisposalInstructions",
+      "title" : "FCC_CG_IRM_0017_verifySubProductDisposalInstructions",
+      "time" : {
+        "start" : 1663786791394,
+        "stop" : 1663786791443,
+        "duration" : 49
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "539b444e898bab7e",
+      "name" : "FCC_CGIRM0019verifyFieldValidationPurposeType",
+      "title" : "FCC_CG_IRM_0019_verifyFieldValidationPurposeType",
+      "time" : {
+        "start" : 1663786796949,
+        "stop" : 1663786832525,
+        "duration" : 35576
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3bd3e3c8dcb91d7f",
+      "name" : "FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance",
+      "title" : "FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance",
+      "time" : {
+        "start" : 1663786837827,
+        "stop" : 1663786870990,
+        "duration" : 33163
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "882844834b4760ba",
+      "name" : "FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance",
+      "title" : "FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance",
+      "time" : {
+        "start" : 1663786876521,
+        "stop" : 1663786898892,
+        "duration" : 22371
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "953998d744128006",
+      "name" : "FCC_CGIRM0023verifyInwardRemittanceSwiftDetails",
+      "title" : "FCC_CGIRM0023verifyInwardRemittanceSwiftDetails",
+      "time" : {
+        "start" : 1663786904313,
+        "stop" : 1663786939489,
+        "duration" : 35176
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "f374a671237bcff4",
+      "name" : "TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI",
+      "title" : "TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI",
+      "time" : {
+        "start" : 1663786944734,
+        "stop" : 1663786944736,
+        "duration" : 2
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "80b2af934b30e3c2",
+      "name" : "TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI",
+      "title" : "TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI",
+      "time" : {
+        "start" : 1663786950117,
+        "stop" : 1663786950121,
+        "duration" : 4
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "522594f555ad02f4",
+      "name" : "TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu",
+      "title" : "TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu",
+      "time" : {
+        "start" : 1663786955724,
+        "stop" : 1663786955727,
+        "duration" : 3
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    } ]
+  } ]
+}

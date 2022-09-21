@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+              <span class="suite-name border-failed">HMHS- eBenefitSyncTAF UI Test Automation</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+                    <span>C:\Users\Dilip\git\InwardRemittance\src\test\resources\testSuites\Smoke_Test_Suite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="hide-methods failed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation"> (hide)</a> <!-- hide-methods failed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation -->
+                      <a href="#" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="show-methods failed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation"> (show)</a> <!-- show-methods failed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation -->
+                    </span>
+                    <div class="method-list-content failed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions">TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI">TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI">TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu">TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="hide-methods passed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation"> (hide)</a> <!-- hide-methods passed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation -->
+                      <a href="#" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="show-methods passed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation"> (show)</a> <!-- show-methods passed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation -->
+                    </span>
+                    <div class="method-list-content passed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable">TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility">TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification">TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction">TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction">TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation">TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="panel HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+          <div class="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Script.kotak.fcc.product.InwardRemittanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions">
+                  </a> <!-- TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions -->
+                  <span class="method-name">TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.IR.checkCustomerReferenceDisplayed(IR.java:126)
+	at com.kotak.fcc.product.InwardRemittance.IR.verifySearchCriteriaTransactions(IR.java:168)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions(InwardRemittanceTest.java:104)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI">
+                  </a> <!-- TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI -->
+                  <span class="method-name">TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.FTI.clickNostroUtility(FTI.java:121)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI(InwardRemittanceTest.java:195)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI">
+                  </a> <!-- TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI -->
+                  <span class="method-name">TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.FTI.clickNostroUtility(FTI.java:121)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI(InwardRemittanceTest.java:209)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu">
+                  </a> <!-- TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu -->
+                  <span class="method-name">TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.FTI.clickNostroUtility(FTI.java:121)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu(InwardRemittanceTest.java:227)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation-class-failed -->
+          <div class="suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Script.kotak.fcc.product.InwardRemittanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable">
+                  </a> <!-- TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable -->
+                  <span class="method-name">TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility">
+                  </a> <!-- TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility -->
+                  <span class="method-name">TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification">
+                  </a> <!-- TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification -->
+                  <span class="method-name">TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction">
+                  </a> <!-- TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction -->
+                  <span class="method-name">TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction">
+                  </a> <!-- TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction -->
+                  <span class="method-name">TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation">
+                  </a> <!-- TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation -->
+                  <span class="method-name">TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HMHS-_eBenefitSyncTAF_UI_Test_Automation-class-passed -->
+        </div> <!-- panel HMHS-_eBenefitSyncTAF_UI_Test_Automation -->
+        <div panel-name="test-xml-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Dilip\git\InwardRemittance\src\test\resources\testSuites\Smoke_Test_Suite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;HMHS- eBenefitSyncTAF UI Test Automation&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.generic.CustomReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.generic.HtmlCustomReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;SMOKE TEST SUITE&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Script.kotak.fcc.product.InwardRemittanceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SMOKE TEST SUITE --&gt;
+  &lt;test name=&quot;SMOKE TEST SUITE(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Script.kotak.fcc.product.InwardRemittanceTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI&quot;/&gt;
+          &lt;include name=&quot;TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu&quot;/&gt;
+          &lt;include name=&quot;initializeEnvironment&quot;/&gt;
+          &lt;include name=&quot;TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions&quot;/&gt;
+          &lt;include name=&quot;TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI&quot;/&gt;
+          &lt;include name=&quot;redirect_Me_To_HomePage_On_FCC_Application&quot;/&gt;
+          &lt;include name=&quot;tearDownEnvironment&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.Script.kotak.fcc.product.InwardRemittanceTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SMOKE TEST SUITE(failed) --&gt;
+&lt;/suite&gt; &lt;!-- HMHS- eBenefitSyncTAF UI Test Automation --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for HMHS- eBenefitSyncTAF UI Test Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SMOKE TEST SUITE (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SMOKE TEST SUITE(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for HMHS- eBenefitSyncTAF UI Test Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">InwardRemittance_Verification</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for HMHS- eBenefitSyncTAF UI Test Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_HMHS-_eBenefitSyncTAF_UI_Test_Automation');
+function tableData_HMHS-_eBenefitSyncTAF_UI_Test_Automation() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification')
+data.setCell(0, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(0, 3, 90918);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions')
+data.setCell(1, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(1, 3, 48727);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu')
+data.setCell(2, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(2, 3, 23081);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI')
+data.setCell(3, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(3, 3, 22560);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI')
+data.setCell(4, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(4, 3, 22482);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation')
+data.setCell(5, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(5, 3, 21339);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction')
+data.setCell(6, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(6, 3, 15349);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction')
+data.setCell(7, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(7, 3, 11333);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility')
+data.setCell(8, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(8, 3, 10335);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable')
+data.setCell(9, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(9, 3, 7621);
+window.suiteTableData['HMHS-_eBenefitSyncTAF_UI_Test_Automation']= { tableData: data, tableDiv: 'times-div-HMHS-_eBenefitSyncTAF_UI_Test_Automation'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-HMHS-_eBenefitSyncTAF_UI_Test_Automation">
+              </div> <!-- times-div-HMHS-_eBenefitSyncTAF_UI_Test_Automation -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for HMHS- eBenefitSyncTAF UI Test Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click On Details</span>
+                <span class="reporter-method-output">Step Description--> click On Transction Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click On View</span>
+                <span class="reporter-method-output">Step Description--> click On Download</span>
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> open new URL </span>
+                <span class="reporter-method-output">Step Description--> Open AUT URL -----> https://nbuat.kotak.com/knb2/</span>
+                <span class="reporter-method-output">Step Description--> Set user name|| Input Value : 105360700</span>
+                <span class="reporter-method-output">Step Description--> Click 'Next' button</span>
+                <span class="reporter-method-output">Step Description--> Set password|| Input Value : Quality123</span>
+                <span class="reporter-method-output">Step Description--> Click 'SecureLogin' button</span>
+                <span class="reporter-method-output">Step Description--> Verify user login is successfull by using page title || Expected Result : Kotak Net Banking || Actual Result : Kotak Net Banking</span>
+                <span class="reporter-method-output">Step Description--> Click 'Trade Link' </span>
+                <span class="reporter-method-output">Step Description--> Click 'Trade Link' </span>
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> check Edit Transactions Displayed</span>
+                <span class="reporter-method-output">Step Description--> check Review Displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click Edit Transactions</span>
+                <span class="reporter-method-output">Step Description--> check Transactions Received From Nostro Utility Displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click On Details</span>
+                <span class="reporter-method-output">Step Description--> click On Transction Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> check DI Inward Remittance Displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> click Nostro Utility</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> click Nostro Utility</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> click Nostro Utility</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> clickFTInquiry</span>
+                <span class="reporter-method-output">Step Description--> click Filter Button</span>
+                <span class="reporter-method-output">Step Description--> check Portal RefId Displayed</span>
+                <span class="reporter-method-output">Step Description--> check Customer Reference Displayed</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-HMHS-_eBenefitSyncTAF_UI_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Script.kotak.fcc.product.InwardRemittanceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeEnvironment</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_001_MessageToBank_Menu...)</span>
+                <span class="method-start">14679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification</span>
+                <span class="method-start">20289 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0008_VerifySearchCrite...)</span>
+                <span class="method-start">112929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions</span>
+                <span class="method-start">117964 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0010_VerifyMenuOptions...)</span>
+                <span class="method-start">167099 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable</span>
+                <span class="method-start">172126 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0011_VerifyTransaction...)</span>
+                <span class="method-start">180143 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility</span>
+                <span class="method-start">185200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0025_verifyAuditDetail...)</span>
+                <span class="method-start">195845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction</span>
+                <span class="method-start">200872 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0026_verifyAuditDetail...)</span>
+                <span class="method-start">216747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction</span>
+                <span class="method-start">221902 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0034_verifyTransaction...)</span>
+                <span class="method-start">233679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation</span>
+                <span class="method-start">238749 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_031_verifyPullBackMenu...)</span>
+                <span class="method-start">260602 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI</span>
+                <span class="method-start">265662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_032_verifyPullBackEnqu...)</span>
+                <span class="method-start">288477 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI</span>
+                <span class="method-start">293623 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_033_verifyFunctionalit...)</span>
+                <span class="method-start">316680 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu</span>
+                <span class="method-start">321714 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownEnvironment</span>
+                <span class="method-start">345203 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

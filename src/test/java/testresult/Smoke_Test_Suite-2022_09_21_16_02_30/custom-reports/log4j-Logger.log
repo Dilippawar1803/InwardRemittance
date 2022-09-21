@@ -1,0 +1,102 @@
+2022-09-21 21:33:01 INFO  WebDriverManager:966 - Using chromedriver 105.0.5195.52 (resolved driver for Chrome 105)
+2022-09-21 21:33:01 INFO  WebDriverManager:1021 - Exporting webdriver.chrome.driver as C:\Users\Dilip\.cache\selenium\chromedriver\win32\105.0.5195.52\chromedriver.exe
+2022-09-21 21:33:06 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:33:06 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:33:11 INFO  BaseTest:269 - testDataForTest------->{runmode=Y, TC ID=TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification}
+2022-09-21 21:33:11 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification Startred at 21-Sep-2022-21-33-11
+2022-09-21 21:33:20 INFO  Utilities:387 - Step Description--> open new URL 
+2022-09-21 21:33:21 INFO  Utilities:387 - Step Description--> Open AUT URL -----> https://nbuat.kotak.com/knb2/
+2022-09-21 21:33:23 INFO  Utilities:387 - Step Description--> Set user name|| Input Value : 105360700
+2022-09-21 21:33:31 INFO  Utilities:387 - Step Description--> Click 'Next' button
+2022-09-21 21:33:33 INFO  Utilities:387 - Step Description--> Set password|| Input Value : Quality123
+2022-09-21 21:33:36 INFO  Utilities:387 - Step Description--> Click 'SecureLogin' button
+2022-09-21 21:33:38 INFO  Utilities:387 - Step Description--> Verify user login is successfull by using page title || Expected Result : Kotak Net Banking || Actual Result : Kotak Net Banking
+2022-09-21 21:33:45 INFO  Utilities:387 - Step Description--> Click 'Trade Link' 
+2022-09-21 21:33:47 INFO  Utilities:387 - Step Description--> Click 'Trade Link' 
+2022-09-21 21:34:36 INFO  Utilities:387 - Step Description--> Click Inward Remittance
+2022-09-21 21:34:38 INFO  Utilities:387 - Step Description--> Click DI Inward Remittance
+2022-09-21 21:34:40 INFO  Utilities:387 - Step Description--> check Edit Transactions Displayed
+2022-09-21 21:34:42 INFO  Utilities:387 - Step Description--> check Review Displayed
+2022-09-21 21:34:44 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:34:45 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:34:45 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:34:50 INFO  BaseTest:269 - testDataForTest------->{runmode=Y, TC ID=TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions}
+2022-09-21 21:34:50 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions Startred at 21-Sep-2022-21-34-50
+2022-09-21 21:34:51 INFO  Utilities:387 - Step Description--> Click Inward Remittance
+2022-09-21 21:34:54 INFO  Utilities:387 - Step Description--> Click DI Inward Remittance
+2022-09-21 21:34:57 INFO  Utilities:387 - Step Description--> clickFTInquiry
+2022-09-21 21:35:00 INFO  Utilities:387 - Step Description--> click Filter Button
+2022-09-21 21:35:10 INFO  Utilities:387 - Step Description--> check Portal RefId Displayed
+2022-09-21 21:35:12 INFO  Utilities:387 - Step Description--> check Customer Reference Displayed
+2022-09-21 21:35:13 INFO  Utilities:387 - Step Description--> check Beneficiary Name Displayed
+2022-09-21 21:35:15 INFO  Utilities:387 - Step Description--> check Applicant Account No Displayed
+2022-09-21 21:35:16 INFO  Utilities:387 - Step Description--> check Status Displayed
+2022-09-21 21:35:18 INFO  Utilities:387 - Step Description--> check CCY Displayed
+2022-09-21 21:35:19 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:35:19 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:35:19 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:35:24 INFO  BaseTest:269 - testDataForTest------->{runmode=Y, TC ID=TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable}
+2022-09-21 21:35:24 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable Startred at 21-Sep-2022-21-35-24
+2022-09-21 21:35:26 INFO  Utilities:387 - Step Description--> Click Inward Remittance
+2022-09-21 21:35:29 INFO  Utilities:387 - Step Description--> Click DI Inward Remittance
+2022-09-21 21:35:31 INFO  Utilities:387 - Step Description--> check DI Inward Remittance Displayed
+2022-09-21 21:35:32 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:35:32 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:35:32 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:35:37 INFO  BaseTest:269 - testDataForTest------->{runmode=Y, TC ID=TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility}
+2022-09-21 21:35:37 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility Startred at 21-Sep-2022-21-35-37
+2022-09-21 21:35:39 INFO  Utilities:387 - Step Description--> Click Inward Remittance
+2022-09-21 21:35:42 INFO  Utilities:387 - Step Description--> Click DI Inward Remittance
+2022-09-21 21:35:45 INFO  Utilities:387 - Step Description--> click Edit Transactions
+2022-09-21 21:35:46 INFO  Utilities:387 - Step Description--> check Transactions Received From Nostro Utility Displayed
+2022-09-21 21:35:48 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:35:48 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:35:48 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:35:53 INFO  BaseTest:269 - testDataForTest------->{runmode=Y, TC ID=TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction}
+2022-09-21 21:35:53 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction Startred at 21-Sep-2022-21-35-53
+2022-09-21 21:35:54 INFO  Utilities:387 - Step Description--> Click Inward Remittance
+2022-09-21 21:35:58 INFO  Utilities:387 - Step Description--> Click DI Inward Remittance
+2022-09-21 21:36:01 INFO  Utilities:387 - Step Description--> click On Details
+2022-09-21 21:36:05 INFO  Utilities:387 - Step Description--> click On Transction Button
+2022-09-21 21:36:06 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:36:07 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:36:07 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:36:12 INFO  BaseTest:269 - testDataForTest------->{runmode=Y, TC ID=TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction}
+2022-09-21 21:36:12 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction Startred at 21-Sep-2022-21-36-12
+2022-09-21 21:36:14 INFO  Utilities:387 - Step Description--> Click Inward Remittance
+2022-09-21 21:36:17 INFO  Utilities:387 - Step Description--> Click DI Inward Remittance
+2022-09-21 21:36:20 INFO  Utilities:387 - Step Description--> click On Details
+2022-09-21 21:36:38 INFO  Utilities:387 - Step Description--> click On Transction Button
+2022-09-21 21:36:39 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:36:39 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:36:39 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:36:44 INFO  BaseTest:269 - testDataForTest------->{runmode=Y, TC ID=TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation}
+2022-09-21 21:36:44 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation Startred at 21-Sep-2022-21-36-44
+2022-09-21 21:36:46 INFO  Utilities:387 - Step Description--> Click Inward Remittance
+2022-09-21 21:36:49 INFO  Utilities:387 - Step Description--> Click DI Inward Remittance
+2022-09-21 21:36:52 INFO  Utilities:387 - Step Description--> click On View
+2022-09-21 21:36:58 INFO  Utilities:387 - Step Description--> click On Download
+2022-09-21 21:37:01 INFO  Utilities:387 - Step Description--> Click Inward Remittance
+2022-09-21 21:37:04 INFO  Utilities:387 - Step Description--> Click DI Inward Remittance
+2022-09-21 21:37:05 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:37:06 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:37:06 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:37:11 INFO  BaseTest:269 - testDataForTest------->{runmode=Y, TC ID=TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI}
+2022-09-21 21:37:11 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI Startred at 21-Sep-2022-21-37-11
+2022-09-21 21:37:33 ERROR Utilities:397 - Step Description--> click Nostro Utility
+2022-09-21 21:37:34 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:37:34 ERROR CustomReporterHelper:124 - TEST FAILED
+2022-09-21 21:37:34 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:37:34 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:37:39 INFO  BaseTest:269 - testDataForTest------->{runmode=Y, TC ID=TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI}
+2022-09-21 21:37:39 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI Startred at 21-Sep-2022-21-37-39
+2022-09-21 21:38:01 ERROR Utilities:397 - Step Description--> click Nostro Utility
+2022-09-21 21:38:01 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:38:01 ERROR CustomReporterHelper:124 - TEST FAILED
+2022-09-21 21:38:02 INFO  BaseTest:606 - Initilize ATU Test video recorder
+2022-09-21 21:38:02 INFO  BaseTest:627 - Test execution video recording started ..!!
+2022-09-21 21:38:07 INFO  BaseTest:269 - testDataForTest------->{Amount=, Currency=, RefranceNumber=, CRN=, runmode=Y, TC ID=TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu}
+2022-09-21 21:38:07 INFO  Utilities:275 - TCID TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu Startred at 21-Sep-2022-21-38-07
+2022-09-21 21:38:29 ERROR Utilities:397 - Step Description--> click Nostro Utility
+2022-09-21 21:38:29 INFO  CustomReporterHelper:120 - TEST PASSED
+2022-09-21 21:38:29 ERROR CustomReporterHelper:124 - TEST FAILED

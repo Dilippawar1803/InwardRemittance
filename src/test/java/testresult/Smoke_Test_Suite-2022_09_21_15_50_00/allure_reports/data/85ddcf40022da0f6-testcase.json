@@ -1,0 +1,353 @@
+{
+  "uid" : "85ddcf40022da0f6",
+  "name" : "TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification",
+  "title" : "TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification",
+  "time" : {
+    "start" : 1663775443125,
+    "stop" : 1663775533955,
+    "duration" : 90830
+  },
+  "summary" : {
+    "attachments" : 13,
+    "steps" : 15
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "VerifyMessageToBank_MenuOptions_Verification",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "e2106442298cdfca",
+    "name" : "HMHS- eBenefitSyncTAF UI Test Automation",
+    "title" : "HMHS- eBenefitSyncTAF UI Test Automation : SMOKE TEST SUITE"
+  },
+  "steps" : [ {
+    "name" : "openAUT_URL",
+    "title" : "Open AUT_URL",
+    "time" : {
+      "start" : 1663775443711,
+      "stop" : 1663775459516,
+      "duration" : 15805
+    },
+    "summary" : {
+      "attachments" : 2,
+      "steps" : 2
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "logReporter[open new URL , true]",
+      "title" : "open new URL ",
+      "time" : {
+        "start" : 1663775456697,
+        "stop" : 1663775458271,
+        "duration" : 1574
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "8269acd4-0eb8-4023-92aa-93f6362bdbe2-attachment.png",
+        "type" : "image/png",
+        "size" : 106167,
+        "uid" : "730d0fb006c53cc2"
+      } ],
+      "steps" : [ ]
+    }, {
+      "name" : "logReporter[Open AUT URL -----> https://nbuat.kotak.com/knb2/, true]",
+      "title" : "Open AUT URL -----> https://nbuat.kotak.com/knb2/",
+      "time" : {
+        "start" : 1663775458276,
+        "stop" : 1663775459516,
+        "duration" : 1240
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "da56ec2c-362d-4d83-9544-74d0f9d64926-attachment.png",
+        "type" : "image/png",
+        "size" : 106188,
+        "uid" : "4a529389513b3d8b"
+      } ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "doLoginFCC",
+    "title" : "Login into the system.",
+    "time" : {
+      "start" : 1663775459519,
+      "stop" : 1663775476479,
+      "duration" : 16960
+    },
+    "summary" : {
+      "attachments" : 5,
+      "steps" : 5
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "logReporter[Set user name, 105360700, true]",
+      "title" : "Set user name - 105360700",
+      "time" : {
+        "start" : 1663775460177,
+        "stop" : 1663775461425,
+        "duration" : 1248
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "ff3cec69-3a9c-46e4-aab2-3fb674b1a1d1-attachment.png",
+        "type" : "image/png",
+        "size" : 107974,
+        "uid" : "aef25085dabf55fb"
+      } ],
+      "steps" : [ ]
+    }, {
+      "name" : "logReporter[Click 'Next' button, true]",
+      "title" : "Click 'Next' button",
+      "time" : {
+        "start" : 1663775468810,
+        "stop" : 1663775470336,
+        "duration" : 1526
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "fb86d604-5a09-4a16-990e-36e5e41fbcea-attachment.png",
+        "type" : "image/png",
+        "size" : 156638,
+        "uid" : "f6cebd0cabfcef21"
+      } ],
+      "steps" : [ ]
+    }, {
+      "name" : "logReporter[Set password, Quality123, true]",
+      "title" : "Set password - Quality123",
+      "time" : {
+        "start" : 1663775470899,
+        "stop" : 1663775472165,
+        "duration" : 1266
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "cc47243f-b8a3-47ed-9f8f-a246bf0106fc-attachment.png",
+        "type" : "image/png",
+        "size" : 157367,
+        "uid" : "dfe8022f92bc17d0"
+      } ],
+      "steps" : [ ]
+    }, {
+      "name" : "logReporter[Click 'SecureLogin' button, true]",
+      "title" : "Click 'SecureLogin' button",
+      "time" : {
+        "start" : 1663775473901,
+        "stop" : 1663775475171,
+        "duration" : 1270
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "9e1796c8-4016-4922-991b-e9aed9f38a4c-attachment.png",
+        "type" : "image/png",
+        "size" : 146083,
+        "uid" : "f3293ae493d57c3"
+      } ],
+      "steps" : [ ]
+    }, {
+      "name" : "logReporter[Verify user login is successfull by using page title, Kotak Net Banking, Kotak Net Banking, true]",
+      "title" : "Verify user login is successfull by using page title - Kotak Net Banking - Kotak Net Banking",
+      "time" : {
+        "start" : 1663775475191,
+        "stop" : 1663775476479,
+        "duration" : 1288
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "5a1fa5ed-e78a-45e2-84b1-7e8e11a9eee9-attachment.png",
+        "type" : "image/png",
+        "size" : 148406,
+        "uid" : "4c1bb88f842a6b07"
+      } ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "logReporter[Click 'Trade Link' , true]",
+    "title" : "Click 'Trade Link' ",
+    "time" : {
+      "start" : 1663775478854,
+      "stop" : 1663775480130,
+      "duration" : 1276
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "49bbc013-ad82-4002-b12d-ff15e7beef88-attachment.png",
+      "type" : "image/png",
+      "size" : 109191,
+      "uid" : "be44fb7eb528e3fc"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click 'Trade Link' , true]",
+    "title" : "Click 'Trade Link' ",
+    "time" : {
+      "start" : 1663775481523,
+      "stop" : 1663775482722,
+      "duration" : 1199
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "93ce010f-0d64-4a19-8688-b66bb3274dd2-attachment.png",
+      "type" : "image/png",
+      "size" : 63383,
+      "uid" : "82c05f5d3bafbd47"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click Inward Remittance, true]",
+    "title" : "Click Inward Remittance",
+    "time" : {
+      "start" : 1663775526618,
+      "stop" : 1663775527856,
+      "duration" : 1238
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "36854389-021c-4c27-9571-e0943e8b4692-attachment.png",
+      "type" : "image/png",
+      "size" : 129899,
+      "uid" : "c5265b3da11fb277"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663775529442,
+      "stop" : 1663775530761,
+      "duration" : 1319
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "9ec9864f-c3b9-4ebd-a966-e6f6d851dc91-attachment.png",
+      "type" : "image/png",
+      "size" : 83725,
+      "uid" : "196e35cb61704fad"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[check Edit Transactions Displayed, true]",
+    "title" : "check Edit Transactions Displayed",
+    "time" : {
+      "start" : 1663775531074,
+      "stop" : 1663775532385,
+      "duration" : 1311
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "6abe2bc0-2d40-46da-bde1-f8b06c753078-attachment.png",
+      "type" : "image/png",
+      "size" : 115586,
+      "uid" : "8415f4d2da0bf3bb"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[check Review Displayed, true]",
+    "title" : "check Review Displayed",
+    "time" : {
+      "start" : 1663775532745,
+      "stop" : 1663775533950,
+      "duration" : 1205
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "813c80db-ccc0-4c48-ae05-80f0051fc16c-attachment.png",
+      "type" : "image/png",
+      "size" : 116597,
+      "uid" : "863e8474b8bf957c"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "HMHS- eBenefitSyncTAF UI Test Automation"
+  }, {
+    "name" : "suite-title",
+    "value" : "HMHS- eBenefitSyncTAF UI Test Automation : SMOKE TEST SUITE"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "thread",
+    "value" : "16512@DESKTOP-QM91UED.main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-QM91UED"
+  } ],
+  "parameters" : [ ]
+}

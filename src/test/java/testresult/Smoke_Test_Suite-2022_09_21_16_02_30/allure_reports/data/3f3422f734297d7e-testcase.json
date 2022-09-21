@@ -1,0 +1,260 @@
+{
+  "uid" : "3f3422f734297d7e",
+  "name" : "TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions",
+  "title" : "TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions",
+  "time" : {
+    "start" : 1663776290367,
+    "stop" : 1663776319496,
+    "duration" : 29129
+  },
+  "summary" : {
+    "attachments" : 10,
+    "steps" : 10
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "VerifySearchCriteriaTransactions",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "5949d6f455f3735e",
+    "name" : "Kotak InwardRemittance",
+    "title" : "Kotak InwardRemittance : SMOKE TEST SUITE"
+  },
+  "steps" : [ {
+    "name" : "logReporter[Click Inward Remittance, true]",
+    "title" : "Click Inward Remittance",
+    "time" : {
+      "start" : 1663776291912,
+      "stop" : 1663776293121,
+      "duration" : 1209
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "85b603c1-9404-4ed4-8c8f-2379f05b27d9-attachment.png",
+      "type" : "image/png",
+      "size" : 119322,
+      "uid" : "239f41d56b374e35"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663776294915,
+      "stop" : 1663776296111,
+      "duration" : 1196
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "b1c26717-9608-4aab-887d-cd44553e593d-attachment.png",
+      "type" : "image/png",
+      "size" : 116736,
+      "uid" : "4a0cc5c2fd8fa9b9"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[clickFTInquiry, true]",
+    "title" : "clickFTInquiry",
+    "time" : {
+      "start" : 1663776297713,
+      "stop" : 1663776298925,
+      "duration" : 1212
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "2a3ac94c-2d35-449b-8adb-991a0bb4dd7b-attachment.png",
+      "type" : "image/png",
+      "size" : 83754,
+      "uid" : "7068a1584a41ba25"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click Filter Button, true]",
+    "title" : "click Filter Button",
+    "time" : {
+      "start" : 1663776300298,
+      "stop" : 1663776301497,
+      "duration" : 1199
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "b4721fb0-6fb3-4f43-90cb-f865b30c8987-attachment.png",
+      "type" : "image/png",
+      "size" : 94712,
+      "uid" : "fe45dced9ecb01d0"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[check Portal RefId Displayed, true]",
+    "title" : "check Portal RefId Displayed",
+    "time" : {
+      "start" : 1663776310580,
+      "stop" : 1663776311797,
+      "duration" : 1217
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "39de1684-fd55-4810-9fac-454fe20753fc-attachment.png",
+      "type" : "image/png",
+      "size" : 95611,
+      "uid" : "2fd1900102f0134e"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[check Customer Reference Displayed, true]",
+    "title" : "check Customer Reference Displayed",
+    "time" : {
+      "start" : 1663776312144,
+      "stop" : 1663776313356,
+      "duration" : 1212
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "6efef97e-fd88-4cef-a7ba-05903f362582-attachment.png",
+      "type" : "image/png",
+      "size" : 95611,
+      "uid" : "eabfc46d13eacb90"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[check Beneficiary Name Displayed, true]",
+    "title" : "check Beneficiary Name Displayed",
+    "time" : {
+      "start" : 1663776313701,
+      "stop" : 1663776314907,
+      "duration" : 1206
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "86b0b053-a459-47ae-9796-c851de08f432-attachment.png",
+      "type" : "image/png",
+      "size" : 95611,
+      "uid" : "b9968267521eef9c"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[check Applicant Account No Displayed, true]",
+    "title" : "check Applicant Account No Displayed",
+    "time" : {
+      "start" : 1663776315242,
+      "stop" : 1663776316451,
+      "duration" : 1209
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "ee4bda4e-5f96-4612-9e46-c555b8a4a424-attachment.png",
+      "type" : "image/png",
+      "size" : 95611,
+      "uid" : "e61ab0a809b507da"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[check Status Displayed, true]",
+    "title" : "check Status Displayed",
+    "time" : {
+      "start" : 1663776316778,
+      "stop" : 1663776317969,
+      "duration" : 1191
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "b96c1893-0b43-40fb-a4a8-ef5cc0abf944-attachment.png",
+      "type" : "image/png",
+      "size" : 95611,
+      "uid" : "e66f9574bbb127a1"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[check CCY Displayed, true]",
+    "title" : "check CCY Displayed",
+    "time" : {
+      "start" : 1663776318299,
+      "stop" : 1663776319496,
+      "duration" : 1197
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "2f00e3f0-fff8-4ac8-b3df-e50484442064-attachment.png",
+      "type" : "image/png",
+      "size" : 95611,
+      "uid" : "e7fddf19fc5ca04a"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "16720@DESKTOP-QM91UED.main"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Kotak InwardRemittance"
+  }, {
+    "name" : "suite-title",
+    "value" : "Kotak InwardRemittance : SMOKE TEST SUITE"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-QM91UED"
+  } ],
+  "parameters" : [ ]
+}

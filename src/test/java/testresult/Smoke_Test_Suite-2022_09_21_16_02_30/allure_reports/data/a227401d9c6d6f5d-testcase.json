@@ -1,0 +1,134 @@
+{
+  "uid" : "a227401d9c6d6f5d",
+  "name" : "TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility",
+  "title" : "TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility",
+  "time" : {
+    "start" : 1663776337910,
+    "stop" : 1663776347978,
+    "duration" : 10068
+  },
+  "summary" : {
+    "attachments" : 4,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "VerifyTransactionsReceivedFromNostroUtility",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "5949d6f455f3735e",
+    "name" : "Kotak InwardRemittance",
+    "title" : "Kotak InwardRemittance : SMOKE TEST SUITE"
+  },
+  "steps" : [ {
+    "name" : "logReporter[Click Inward Remittance, true]",
+    "title" : "Click Inward Remittance",
+    "time" : {
+      "start" : 1663776339379,
+      "stop" : 1663776340610,
+      "duration" : 1231
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "409b5334-72c2-4159-86ca-bec74bd2f313-attachment.png",
+      "type" : "image/png",
+      "size" : 119322,
+      "uid" : "289cb3a0727d9353"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663776342310,
+      "stop" : 1663776343532,
+      "duration" : 1222
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "fbf768da-032f-4b8c-a04d-9bbed9c7093a-attachment.png",
+      "type" : "image/png",
+      "size" : 116736,
+      "uid" : "13881d1581513f40"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click Edit Transactions, true]",
+    "title" : "click Edit Transactions",
+    "time" : {
+      "start" : 1663776345188,
+      "stop" : 1663776346395,
+      "duration" : 1207
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "39b5e086-63af-477a-8081-dba85f6bab35-attachment.png",
+      "type" : "image/png",
+      "size" : 108942,
+      "uid" : "84545e78e32d6f08"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[check Transactions Received From Nostro Utility Displayed, true]",
+    "title" : "check Transactions Received From Nostro Utility Displayed",
+    "time" : {
+      "start" : 1663776346751,
+      "stop" : 1663776347977,
+      "duration" : 1226
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "e4b223a5-82af-4142-b4fa-643d1c08e8b5-attachment.png",
+      "type" : "image/png",
+      "size" : 108942,
+      "uid" : "f4b8da5eadbfd8c1"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "16720@DESKTOP-QM91UED.main"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Kotak InwardRemittance"
+  }, {
+    "name" : "suite-title",
+    "value" : "Kotak InwardRemittance : SMOKE TEST SUITE"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-QM91UED"
+  } ],
+  "parameters" : [ ]
+}

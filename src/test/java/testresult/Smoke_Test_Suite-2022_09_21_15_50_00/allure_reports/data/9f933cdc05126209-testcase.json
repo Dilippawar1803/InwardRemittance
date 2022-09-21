@@ -1,0 +1,134 @@
+{
+  "uid" : "9f933cdc05126209",
+  "name" : "TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction",
+  "title" : "TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction",
+  "time" : {
+    "start" : 1663775623619,
+    "stop" : 1663775638964,
+    "duration" : 15345
+  },
+  "summary" : {
+    "attachments" : 4,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "verifyAuditDetailsForInwardRemittanceTransaction",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "e2106442298cdfca",
+    "name" : "HMHS- eBenefitSyncTAF UI Test Automation",
+    "title" : "HMHS- eBenefitSyncTAF UI Test Automation : SMOKE TEST SUITE"
+  },
+  "steps" : [ {
+    "name" : "logReporter[Click Inward Remittance, true]",
+    "title" : "Click Inward Remittance",
+    "time" : {
+      "start" : 1663775625561,
+      "stop" : 1663775626827,
+      "duration" : 1266
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "1ff1f33b-3619-4a70-98f3-1acbc9aa700d-attachment.png",
+      "type" : "image/png",
+      "size" : 111753,
+      "uid" : "308dfc14308e4f04"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663775629191,
+      "stop" : 1663775630470,
+      "duration" : 1279
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "46e2fc11-51f0-41a4-bebe-90a785a1ee40-attachment.png",
+      "type" : "image/png",
+      "size" : 119039,
+      "uid" : "1f114006028be1c3"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click On Details, true]",
+    "title" : "click On Details",
+    "time" : {
+      "start" : 1663775632555,
+      "stop" : 1663775634282,
+      "duration" : 1727
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "f2826d99-b187-48cb-af48-aea55e3db3e3-attachment.png",
+      "type" : "image/png",
+      "size" : 68682,
+      "uid" : "11618246884dbe15"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click On Transction Button, true]",
+    "title" : "click On Transction Button",
+    "time" : {
+      "start" : 1663775637694,
+      "stop" : 1663775638964,
+      "duration" : 1270
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "1d05d7b8-2e8f-4ee5-9951-e992fe3789ff-attachment.png",
+      "type" : "image/png",
+      "size" : 106486,
+      "uid" : "34fd881ff267bd0a"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "HMHS- eBenefitSyncTAF UI Test Automation"
+  }, {
+    "name" : "suite-title",
+    "value" : "HMHS- eBenefitSyncTAF UI Test Automation : SMOKE TEST SUITE"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "thread",
+    "value" : "16512@DESKTOP-QM91UED.main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-QM91UED"
+  } ],
+  "parameters" : [ ]
+}

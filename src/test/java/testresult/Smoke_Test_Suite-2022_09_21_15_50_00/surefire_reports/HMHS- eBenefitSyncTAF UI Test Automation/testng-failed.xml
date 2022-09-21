@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [HMHS- eBenefitSyncTAF UI Test Automation]">
+  <listeners>
+    <listener class-name="com.generic.CustomReporter"/>
+    <listener class-name="com.generic.HtmlCustomReporter"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="SMOKE TEST SUITE">
+    <classes>
+      <class name="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+    </classes>
+  </test> <!-- SMOKE TEST SUITE -->
+  <test name="SMOKE TEST SUITE(failed)">
+    <classes>
+      <class name="com.Script.kotak.fcc.product.InwardRemittanceTest">
+        <methods>
+          <include name="TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI"/>
+          <include name="TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu"/>
+          <include name="initializeEnvironment"/>
+          <include name="TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions"/>
+          <include name="TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI"/>
+          <include name="redirect_Me_To_HomePage_On_FCC_Application"/>
+          <include name="tearDownEnvironment"/>
+        </methods>
+      </class> <!-- com.Script.kotak.fcc.product.InwardRemittanceTest -->
+    </classes>
+  </test> <!-- SMOKE TEST SUITE(failed) -->
+</suite> <!-- Failed suite [HMHS- eBenefitSyncTAF UI Test Automation] -->

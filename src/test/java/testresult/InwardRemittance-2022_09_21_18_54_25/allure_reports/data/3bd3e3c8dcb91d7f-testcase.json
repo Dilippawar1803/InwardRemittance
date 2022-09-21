@@ -1,0 +1,233 @@
+{
+  "uid" : "3bd3e3c8dcb91d7f",
+  "name" : "FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance",
+  "title" : "FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance",
+  "time" : {
+    "start" : 1663786837827,
+    "stop" : 1663786870990,
+    "duration" : 33163
+  },
+  "summary" : {
+    "attachments" : 8,
+    "steps" : 9
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "7de7ae066babf19b",
+    "name" : "Kotak InwardRemittance",
+    "title" : "Kotak InwardRemittance : SMOKE TEST SUITE"
+  },
+  "steps" : [ {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663786849266,
+      "stop" : 1663786850496,
+      "duration" : 1230
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "a4402c65-59c6-4ff3-a51c-f6c8ea4bb0a5-attachment.png",
+      "type" : "image/png",
+      "size" : 115195,
+      "uid" : "610718cfd9b8f2c"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663786852363,
+      "stop" : 1663786853805,
+      "duration" : 1442
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "607412e9-b239-4d88-9810-04f4996c0eac-attachment.png",
+      "type" : "image/png",
+      "size" : 122107,
+      "uid" : "d815c89daf2902e0"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click Edit Transactions, true]",
+    "title" : "click Edit Transactions",
+    "time" : {
+      "start" : 1663786855366,
+      "stop" : 1663786856632,
+      "duration" : 1266
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "6da20efb-4781-498a-ba54-22da49ccc3c2-attachment.png",
+      "type" : "image/png",
+      "size" : 111163,
+      "uid" : "8e25eb254c19f123"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[clickFTInquiry, true]",
+    "title" : "clickFTInquiry",
+    "time" : {
+      "start" : 1663786858201,
+      "stop" : 1663786859426,
+      "duration" : 1225
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "5a3815aa-8383-43f4-9fd8-9deab0b4e956-attachment.png",
+      "type" : "image/png",
+      "size" : 104430,
+      "uid" : "47fcf99915b9d07a"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click Next Button, true]",
+    "title" : "click Next Button",
+    "time" : {
+      "start" : 1663786862630,
+      "stop" : 1663786863841,
+      "duration" : 1211
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "2df0db94-4a73-4558-83dd-c7a280e3fc35-attachment.png",
+      "type" : "image/png",
+      "size" : 103101,
+      "uid" : "9d747a9e964aef92"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "verifySubProductDisposal",
+    "title" : "verify Sub Product Disposal",
+    "time" : {
+      "start" : 1663786863844,
+      "stop" : 1663786870990,
+      "duration" : 7146
+    },
+    "summary" : {
+      "attachments" : 3,
+      "steps" : 3
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "logReporter[click On type, true]",
+      "title" : "click On type",
+      "time" : {
+        "start" : 1663786865348,
+        "stop" : 1663786866591,
+        "duration" : 1243
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "3db814f4-1e9d-48f0-a366-55c2cf740b4b-attachment.png",
+        "type" : "image/png",
+        "size" : 121066,
+        "uid" : "20a287d89bca1b69"
+      } ],
+      "steps" : [ ]
+    }, {
+      "name" : "logReporter[click On Option, true]",
+      "title" : "click On Option",
+      "time" : {
+        "start" : 1663786868254,
+        "stop" : 1663786869471,
+        "duration" : 1217
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "a9f5a2fc-38f7-4772-b08a-00b39cd6d9b6-attachment.png",
+        "type" : "image/png",
+        "size" : 98197,
+        "uid" : "7c91154ef9e20d35"
+      } ],
+      "steps" : [ ]
+    }, {
+      "name" : "logReporter[Verify Disposal Value, true]",
+      "title" : "Verify Disposal Value",
+      "time" : {
+        "start" : 1663786869790,
+        "stop" : 1663786870990,
+        "duration" : 1200
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "9504ca5e-35f5-4dc6-bf9f-f2f76cddc948-attachment.png",
+        "type" : "image/png",
+        "size" : 98197,
+        "uid" : "ad4e41fa9d1e433d"
+      } ],
+      "steps" : [ ]
+    } ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Kotak InwardRemittance"
+  }, {
+    "name" : "suite-title",
+    "value" : "Kotak InwardRemittance : SMOKE TEST SUITE"
+  }, {
+    "name" : "thread",
+    "value" : "2232@DESKTOP-QM91UED.main"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-QM91UED"
+  } ],
+  "parameters" : [ ]
+}

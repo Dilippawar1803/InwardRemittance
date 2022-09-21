@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Kotak_InwardRemittance">
+              <span class="suite-name border-failed">Kotak InwardRemittance</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Kotak_InwardRemittance">
+                    <span>C:\Users\Dilip\git\InwardRemittance\src\test\resources\testSuites\InwardRemittance.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Kotak_InwardRemittance">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Kotak_InwardRemittance">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Kotak_InwardRemittance">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Kotak_InwardRemittance">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Kotak_InwardRemittance">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Kotak_InwardRemittance">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods, 8 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Kotak_InwardRemittance" class="hide-methods failed suite-Kotak_InwardRemittance"> (hide)</a> <!-- hide-methods failed suite-Kotak_InwardRemittance -->
+                      <a href="#" panel-name="suite-Kotak_InwardRemittance" class="show-methods failed suite-Kotak_InwardRemittance"> (show)</a> <!-- show-methods failed suite-Kotak_InwardRemittance -->
+                    </span>
+                    <div class="method-list-content failed suite-Kotak_InwardRemittance">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="FCC_CGIRM0017verifySubProductDisposalInstructions">FCC_CGIRM0017verifySubProductDisposalInstructions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="FCC_CGIRM0019verifyFieldValidationPurposeType">FCC_CGIRM0019verifyFieldValidationPurposeType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance">FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance">FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="FCC_CGIRM0023verifyInwardRemittanceSwiftDetails">FCC_CGIRM0023verifyInwardRemittanceSwiftDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI">TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI">TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu">TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Kotak_InwardRemittance -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Kotak_InwardRemittance" class="hide-methods passed suite-Kotak_InwardRemittance"> (hide)</a> <!-- hide-methods passed suite-Kotak_InwardRemittance -->
+                      <a href="#" panel-name="suite-Kotak_InwardRemittance" class="show-methods passed suite-Kotak_InwardRemittance"> (show)</a> <!-- show-methods passed suite-Kotak_InwardRemittance -->
+                    </span>
+                    <div class="method-list-content passed suite-Kotak_InwardRemittance">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCIDFCCCGIRM001MessageToBankMenuOptionsVerification">TCIDFCCCGIRM001MessageToBankMenuOptionsVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCCCGIRM0008VerifySearchCriteriaTransactions">TCID_FCCCGIRM0008VerifySearchCriteriaTransactions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCCCGIRM0010VerifyMenuOptionsAvailable">TCID_FCCCGIRM0010VerifyMenuOptionsAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility">TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction">TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction">TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Kotak_InwardRemittance" title="com.Script.kotak.fcc.product.InwardRemittanceTest" hash-for-method="TCID_FCCCGIRM0034verifyTransactionCopyValidation">TCID_FCCCGIRM0034verifyTransactionCopyValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Kotak_InwardRemittance -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Kotak_InwardRemittance" class="panel Kotak_InwardRemittance">
+          <div class="suite-Kotak_InwardRemittance-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Script.kotak.fcc.product.InwardRemittanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="FCC_CGIRM0017verifySubProductDisposalInstructions">
+                  </a> <!-- FCC_CGIRM0017verifySubProductDisposalInstructions -->
+                  <span class="method-name">FCC_CGIRM0017verifySubProductDisposalInstructions</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.IRDisposalInstructionDetails.verifySubProductDisposal(IRDisposalInstructionDetails.java:70)
+	at com.view.kotak.fcc.product.InwardRemittanceView.verifySubProductDisposal_1(InwardRemittanceView.java:36)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0017verifySubProductDisposalInstructions(InwardRemittanceTest.java:213)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FCC_CGIRM0019verifyFieldValidationPurposeType">
+                  </a> <!-- FCC_CGIRM0019verifyFieldValidationPurposeType -->
+                  <span class="method-name">FCC_CGIRM0019verifyFieldValidationPurposeType</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.IRDisposalInstructionDetails.verifySubProductDisposal(IRDisposalInstructionDetails.java:70)
+	at com.view.kotak.fcc.product.InwardRemittanceView.verifySubProductDisposal_1(InwardRemittanceView.java:36)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0019verifyFieldValidationPurposeType(InwardRemittanceTest.java:239)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance">
+                  </a> <!-- FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance -->
+                  <span class="method-name">FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-QM91UED&apos;, ip: &apos;192.168.244.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dilip\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b8fc49d89dfba42d3ec82f066f63274
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.generic.Utilities.takeScreenShot(Utilities.java:614)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:398)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.IR.clickEditTransactions(IR.java:76)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance(InwardRemittanceTest.java:256)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance">
+                  </a> <!-- FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance -->
+                  <span class="method-name">FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-QM91UED&apos;, ip: &apos;192.168.244.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dilip\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b8fc49d89dfba42d3ec82f066f63274
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.generic.Utilities.takeScreenShot(Utilities.java:614)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:398)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.IR.clickEditTransactions(IR.java:76)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance(InwardRemittanceTest.java:278)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FCC_CGIRM0023verifyInwardRemittanceSwiftDetails">
+                  </a> <!-- FCC_CGIRM0023verifyInwardRemittanceSwiftDetails -->
+                  <span class="method-name">FCC_CGIRM0023verifyInwardRemittanceSwiftDetails</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-QM91UED&apos;, ip: &apos;192.168.244.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dilip\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b8fc49d89dfba42d3ec82f066f63274
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.generic.Utilities.takeScreenShot(Utilities.java:614)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:398)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.flows.commonFlows.CommonFlow.navigateToDIInwardRemittance(CommonFlow.java:76)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0023verifyInwardRemittanceSwiftDetails(InwardRemittanceTest.java:300)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI">
+                  </a> <!-- TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI -->
+                  <span class="method-name">TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-QM91UED&apos;, ip: &apos;192.168.244.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dilip\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b8fc49d89dfba42d3ec82f066f63274
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.generic.Utilities.takeScreenShot(Utilities.java:614)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:398)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.FTI.clickNostroUtility(FTI.java:121)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI(InwardRemittanceTest.java:316)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI">
+                  </a> <!-- TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI -->
+                  <span class="method-name">TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-QM91UED&apos;, ip: &apos;192.168.244.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dilip\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b8fc49d89dfba42d3ec82f066f63274
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.generic.Utilities.takeScreenShot(Utilities.java:614)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:398)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.FTI.clickNostroUtility(FTI.java:121)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI(InwardRemittanceTest.java:330)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu">
+                  </a> <!-- TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu -->
+                  <span class="method-name">TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=105.0.5195.127)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-QM91UED&apos;, ip: &apos;192.168.244.145&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Dilip\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b8fc49d89dfba42d3ec82f066f63274
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.generic.Utilities.takeScreenShot(Utilities.java:614)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:398)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.FTI.clickNostroUtility(FTI.java:121)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu(InwardRemittanceTest.java:348)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Kotak_InwardRemittance-class-failed -->
+          <div class="suite-Kotak_InwardRemittance-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Script.kotak.fcc.product.InwardRemittanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCIDFCCCGIRM001MessageToBankMenuOptionsVerification">
+                  </a> <!-- TCIDFCCCGIRM001MessageToBankMenuOptionsVerification -->
+                  <span class="method-name">TCIDFCCCGIRM001MessageToBankMenuOptionsVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCCCGIRM0008VerifySearchCriteriaTransactions">
+                  </a> <!-- TCID_FCCCGIRM0008VerifySearchCriteriaTransactions -->
+                  <span class="method-name">TCID_FCCCGIRM0008VerifySearchCriteriaTransactions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCCCGIRM0010VerifyMenuOptionsAvailable">
+                  </a> <!-- TCID_FCCCGIRM0010VerifyMenuOptionsAvailable -->
+                  <span class="method-name">TCID_FCCCGIRM0010VerifyMenuOptionsAvailable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility">
+                  </a> <!-- TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility -->
+                  <span class="method-name">TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction">
+                  </a> <!-- TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction -->
+                  <span class="method-name">TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction">
+                  </a> <!-- TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction -->
+                  <span class="method-name">TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TCID_FCCCGIRM0034verifyTransactionCopyValidation">
+                  </a> <!-- TCID_FCCCGIRM0034verifyTransactionCopyValidation -->
+                  <span class="method-name">TCID_FCCCGIRM0034verifyTransactionCopyValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Kotak_InwardRemittance-class-passed -->
+        </div> <!-- panel Kotak_InwardRemittance -->
+        <div panel-name="test-xml-Kotak_InwardRemittance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Dilip\git\InwardRemittance\src\test\resources\testSuites\InwardRemittance.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Kotak InwardRemittance&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.generic.CustomReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.generic.HtmlCustomReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;SMOKE TEST SUITE&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Script.kotak.fcc.product.InwardRemittanceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SMOKE TEST SUITE --&gt;
+  &lt;test name=&quot;SMOKE TEST SUITE(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Script.kotak.fcc.product.InwardRemittanceTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;initializeEnvironment&quot;/&gt;
+          &lt;include name=&quot;FCC_CGIRM0019verifyFieldValidationPurposeType&quot;/&gt;
+          &lt;include name=&quot;FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance&quot;/&gt;
+          &lt;include name=&quot;FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance&quot;/&gt;
+          &lt;include name=&quot;FCC_CGIRM0017verifySubProductDisposalInstructions&quot;/&gt;
+          &lt;include name=&quot;TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI&quot;/&gt;
+          &lt;include name=&quot;TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu&quot;/&gt;
+          &lt;include name=&quot;redirect_Me_To_HomePage_On_FCC_Application&quot;/&gt;
+          &lt;include name=&quot;FCC_CGIRM0023verifyInwardRemittanceSwiftDetails&quot;/&gt;
+          &lt;include name=&quot;tearDownEnvironment&quot;/&gt;
+          &lt;include name=&quot;TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.Script.kotak.fcc.product.InwardRemittanceTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SMOKE TEST SUITE(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Kotak InwardRemittance --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Kotak_InwardRemittance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Kotak InwardRemittance</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SMOKE TEST SUITE (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SMOKE TEST SUITE(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Kotak_InwardRemittance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Kotak InwardRemittance</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">InwardRemittance_Verification</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">FCC_CGIRM0017verifySubProductDisposalInstructions</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">FCC_CGIRM0019verifyFieldValidationPurposeType</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">FCC_CGIRM0023verifyInwardRemittanceSwiftDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCIDFCCCGIRM001MessageToBankMenuOptionsVerification</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCCCGIRM0008VerifySearchCriteriaTransactions</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCCCGIRM0010VerifyMenuOptionsAvailable</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCCCGIRM0034verifyTransactionCopyValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Kotak_InwardRemittance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Kotak InwardRemittance</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Kotak_InwardRemittance');
+function tableData_Kotak_InwardRemittance() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TCIDFCCCGIRM001MessageToBankMenuOptionsVerification')
+data.setCell(0, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(0, 3, 64699);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'FCC_CGIRM0017verifySubProductDisposalInstructions')
+data.setCell(1, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(1, 3, 49624);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'FCC_CGIRM0019verifyFieldValidationPurposeType')
+data.setCell(2, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(2, 3, 48853);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TCID_FCCCGIRM0034verifyTransactionCopyValidation')
+data.setCell(3, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(3, 3, 39866);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance')
+data.setCell(4, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(4, 3, 36112);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TCID_FCCCGIRM0008VerifySearchCriteriaTransactions')
+data.setCell(5, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(5, 3, 34743);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'FCC_CGIRM0023verifyInwardRemittanceSwiftDetails')
+data.setCell(6, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(6, 3, 30187);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction')
+data.setCell(7, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(7, 3, 21331);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu')
+data.setCell(8, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(8, 3, 20261);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance')
+data.setCell(9, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(9, 3, 20162);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI')
+data.setCell(10, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(10, 3, 20158);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI')
+data.setCell(11, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(11, 3, 20153);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility')
+data.setCell(12, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(12, 3, 19974);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TCID_FCCCGIRM0010VerifyMenuOptionsAvailable')
+data.setCell(13, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(13, 3, 17408);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction')
+data.setCell(14, 2, 'com.Script.kotak.fcc.product.InwardRemittanceTest')
+data.setCell(14, 3, 12703);
+window.suiteTableData['Kotak_InwardRemittance']= { tableData: data, tableDiv: 'times-div-Kotak_InwardRemittance'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-Kotak_InwardRemittance">
+              </div> <!-- times-div-Kotak_InwardRemittance -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Kotak_InwardRemittance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Kotak InwardRemittance</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCCCGIRM0034verifyTransactionCopyValidation</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click On View</span>
+                <span class="reporter-method-output">Step Description--> click On Download</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCCCGIRM0008VerifySearchCriteriaTransactions</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> clickFTInquiry</span>
+                <span class="reporter-method-output">Step Description--> click Filter Button</span>
+                <span class="reporter-method-output">Step Description--> check Portal RefId Displayed</span>
+                <span class="reporter-method-output">Step Description--> check Customer Reference Displayed</span>
+                <span class="reporter-method-output">Step Description--> check Beneficiary Name Displayed</span>
+                <span class="reporter-method-output">Step Description--> check Applicant Account No Displayed</span>
+                <span class="reporter-method-output">Step Description--> check Status Displayed</span>
+                <span class="reporter-method-output">Step Description--> check CCY Displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCCCGIRM0010VerifyMenuOptionsAvailable</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> check DI Inward Remittance Displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click On Details</span>
+                <span class="reporter-method-output">Step Description--> click On Transction Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click Edit Transactions</span>
+                <span class="reporter-method-output">Step Description--> check Transactions Received From Nostro Utility Displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCIDFCCCGIRM001MessageToBankMenuOptionsVerification</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> open new URL </span>
+                <span class="reporter-method-output">Step Description--> Open AUT URL -----> https://nbuat.kotak.com/knb2/</span>
+                <span class="reporter-method-output">Step Description--> Set user name|| Input Value : 105360700</span>
+                <span class="reporter-method-output">Step Description--> Click 'Next' button</span>
+                <span class="reporter-method-output">Step Description--> Set password|| Input Value : Quality123</span>
+                <span class="reporter-method-output">Step Description--> Click 'SecureLogin' button</span>
+                <span class="reporter-method-output">Step Description--> Verify user login is successfull by using page title || Expected Result : Kotak Net Banking || Actual Result : Kotak Net Banking</span>
+                <span class="reporter-method-output">Step Description--> Click 'Trade Link' </span>
+                <span class="reporter-method-output">Step Description--> Click 'Trade Link' </span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> check Edit Transactions Displayed</span>
+                <span class="reporter-method-output">Step Description--> check Review Displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click On Details</span>
+                <span class="reporter-method-output">Step Description--> click On Transction Button</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> click Edit Transactions</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">FCC_CGIRM0023verifyInwardRemittanceSwiftDetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- FCC_CGIRM0023verifyInwardRemittanceSwiftDetails</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click Edit Transactions</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> click Nostro Utility</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">FCC_CGIRM0017verifySubProductDisposalInstructions</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click Edit Transactions</span>
+                <span class="reporter-method-output">Step Description--> clickFTInquiry</span>
+                <span class="reporter-method-output">Step Description--> click Next Button</span>
+                <span class="reporter-method-output">Step Description--> click On type</span>
+                <span class="reporter-method-output">Step Description--> click On Option</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0017_verifySubProductDisposalInstructions	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0017_verifySubProductDisposalInstructions" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0017_verifySubProductDisposalInstructions"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- FCC_CGIRM0017verifySubProductDisposalInstructions</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> click Nostro Utility</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> click Nostro Utility</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">FCC_CGIRM0019verifyFieldValidationPurposeType</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> Click DI Inward Remittance</span>
+                <span class="reporter-method-output">Step Description--> click Edit Transactions</span>
+                <span class="reporter-method-output">Step Description--> clickFTInquiry</span>
+                <span class="reporter-method-output">Step Description--> click Next Button</span>
+                <span class="reporter-method-output">Step Description--> click On type</span>
+                <span class="reporter-method-output">Step Description--> click On Option</span>
+                <span class="reporter-method-output"><a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0019_verifyFieldValidationPurposeType	arget="_blank">Screenshot link</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0019_verifyFieldValidationPurposeType" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/FCC_CG_IRM_0019_verifyFieldValidationPurposeType"></a></span>
+                <span class="reporter-method-output">Capturing Screenshot for the Failed test -- FCC_CGIRM0019verifyFieldValidationPurposeType</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Kotak_InwardRemittance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Kotak_InwardRemittance" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Script.kotak.fcc.product.InwardRemittanceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">initializeEnvironment</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCIDFCCCGIRM001MessageToBankMenuOption...)</span>
+                <span class="method-start">10794 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCIDFCCCGIRM001MessageToBankMenuOptionsVerification</span>
+                <span class="method-start">16026 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM0008VerifySearchCriteriaT...)</span>
+                <span class="method-start">80746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCCCGIRM0008VerifySearchCriteriaTransactions</span>
+                <span class="method-start">85762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM0010VerifyMenuOptionsAvai...)</span>
+                <span class="method-start">122320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCCCGIRM0010VerifyMenuOptionsAvailable</span>
+                <span class="method-start">127342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM0011VerifyTransactionsRec...)</span>
+                <span class="method-start">145063 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCCCGIRM0011VerifyTransactionsReceivedFromNostroUtility</span>
+                <span class="method-start">150762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM0025verifyAuditDetailsFor...)</span>
+                <span class="method-start">171137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCCCGIRM0025verifyAuditDetailsForInwardRemittanceTransaction</span>
+                <span class="method-start">176301 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM0026verifyAuditDetailsFor...)</span>
+                <span class="method-start">189528 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCCCGIRM0026verifyAuditDetailsForRemittanceCreditTransaction</span>
+                <span class="method-start">194719 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM0034verifyTransactionCopy...)</span>
+                <span class="method-start">216478 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TCID_FCCCGIRM0034verifyTransactionCopyValidation</span>
+                <span class="method-start">221575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0017verifySubProductDisposalI...)</span>
+                <span class="method-start">261784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FCC_CGIRM0017verifySubProductDisposalInstructions</span>
+                <span class="method-start">266822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0019verifyFieldValidationPurp...)</span>
+                <span class="method-start">317292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FCC_CGIRM0019verifyFieldValidationPurposeType</span>
+                <span class="method-start">322326 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0020verifyverifyFieldValidati...)</span>
+                <span class="method-start">371444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance</span>
+                <span class="method-start">376468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0021verifyFieldValidationPurp...)</span>
+                <span class="method-start">412932 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance</span>
+                <span class="method-start">417997 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0023verifyInwardRemittanceSwi...)</span>
+                <span class="method-start">438458 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">FCC_CGIRM0023verifyInwardRemittanceSwiftDetails</span>
+                <span class="method-start">443530 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM031verifyPullBackMenuOpti...)</span>
+                <span class="method-start">474045 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI</span>
+                <span class="method-start">479106 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM032verifyPullBackEnquiryS...)</span>
+                <span class="method-start">499497 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI</span>
+                <span class="method-start">504521 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">redirect_Me_To_HomePage_On_FCC_Application(public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM033verifyFunctionalityOfP...)</span>
+                <span class="method-start">524969 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu</span>
+                <span class="method-start">530007 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDownEnvironment</span>
+                <span class="method-start">550606 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

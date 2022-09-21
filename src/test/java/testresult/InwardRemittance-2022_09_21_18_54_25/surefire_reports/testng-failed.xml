@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Kotak InwardRemittance]">
+  <listeners>
+    <listener class-name="com.generic.CustomReporter"/>
+    <listener class-name="com.generic.HtmlCustomReporter"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="SMOKE TEST SUITE">
+    <classes>
+      <class name="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+    </classes>
+  </test> <!-- SMOKE TEST SUITE -->
+  <test name="SMOKE TEST SUITE(failed)">
+    <classes>
+      <class name="com.Script.kotak.fcc.product.InwardRemittanceTest">
+        <methods>
+          <include name="initializeEnvironment"/>
+          <include name="FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance"/>
+          <include name="FCC_CGIRM0017verifySubProductDisposalInstructions"/>
+          <include name="TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI"/>
+          <include name="TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu"/>
+          <include name="redirect_Me_To_HomePage_On_FCC_Application"/>
+          <include name="FCC_CGIRM0023verifyInwardRemittanceSwiftDetails"/>
+          <include name="TCID_FCCCGIRM0008VerifySearchCriteriaTransactions"/>
+          <include name="tearDownEnvironment"/>
+          <include name="TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI"/>
+        </methods>
+      </class> <!-- com.Script.kotak.fcc.product.InwardRemittanceTest -->
+    </classes>
+  </test> <!-- SMOKE TEST SUITE(failed) -->
+</suite> <!-- Failed suite [Kotak InwardRemittance] -->

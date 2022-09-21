@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="4" total="10" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[Step Description--> open new URL ]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Open AUT URL -----> https://nbuat.kotak.com/knb2/]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Set user name|| Input Value : 105360700]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click 'Next' button]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Set password|| Input Value : Quality123]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click 'SecureLogin' button]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Verify user login is successfull by using page title || Expected Result : Kotak Net Banking || Actual Result : Kotak Net Banking]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click 'Trade Link' ]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click 'Trade Link' ]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> check Edit Transactions Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> check Review Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> clickFTInquiry]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click Filter Button]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> check Portal RefId Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> check Customer Reference Displayed]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions	arget="_blank">Screenshot link</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions"></a>]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> check DI Inward Remittance Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click Edit Transactions]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> check Transactions Received From Nostro Utility Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On Details]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On Transction Button]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On Details]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On Transction Button]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On View]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click On Download]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> Click DI Inward Remittance]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click Nostro Utility]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI	arget="_blank">Screenshot link</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI"></a>]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click Nostro Utility]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI	arget="_blank">Screenshot link</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI"></a>]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI]]>
+    </line>
+    <line>
+      <![CDATA[Step Description--> click Nostro Utility]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu	arget="_blank">Screenshot link</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu"></a>]]>
+    </line>
+    <line>
+      <![CDATA[Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu]]>
+    </line>
+  </reporter-output>
+  <suite name="HMHS- eBenefitSyncTAF UI Test Automation" duration-ms="360177" started-at="2022-09-21T15:50:22Z" finished-at="2022-09-21T15:56:22Z">
+    <groups>
+      <group name="InwardRemittance_Verification">
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions()[pri:2, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable()[pri:3, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility()[pri:4, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification()[pri:1, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction()[pri:5, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction()[pri:6, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation()[pri:7, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI()[pri:8, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI()[pri:9, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+        <method signature="InwardRemittanceTest.TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu()[pri:10, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu" class="com.Script.kotak.fcc.product.InwardRemittanceTest"/>
+      </group> <!-- InwardRemittance_Verification -->
+    </groups>
+    <test name="SMOKE TEST SUITE" duration-ms="360177" started-at="2022-09-21T15:50:22Z" finished-at="2022-09-21T15:56:22Z">
+      <class name="com.Script.kotak.fcc.product.InwardRemittanceTest">
+        <test-method status="PASS" signature="initializeEnvironment()[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="initializeEnvironment" is-config="true" duration-ms="14667" started-at="2022-09-21T21:20:22Z" finished-at="2022-09-21T21:20:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeEnvironment -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5610" started-at="2022-09-21T21:20:37Z" finished-at="2022-09-21T21:20:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="PASS" signature="TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification()[pri:1, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification" duration-ms="90918" started-at="2022-09-21T21:20:43Z" finished-at="2022-09-21T21:22:13Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> open new URL ]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Open AUT URL -----> https://nbuat.kotak.com/knb2/]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Set user name|| Input Value : 105360700]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click 'Next' button]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Set password|| Input Value : Quality123]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click 'SecureLogin' button]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Verify user login is successfull by using page title || Expected Result : Kotak Net Banking || Actual Result : Kotak Net Banking]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click 'Trade Link' ]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click 'Trade Link' ]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> check Edit Transactions Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> check Review Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5035" started-at="2022-09-21T21:22:15Z" finished-at="2022-09-21T21:22:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="FAIL" signature="TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions()[pri:2, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions" duration-ms="48727" started-at="2022-09-21T21:22:20Z" finished-at="2022-09-21T21:23:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.IR.checkCustomerReferenceDisplayed(IR.java:126)
+	at com.kotak.fcc.product.InwardRemittance.IR.verifySearchCriteriaTransactions(IR.java:168)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions(InwardRemittanceTest.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> Click Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> clickFTInquiry]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click Filter Button]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> check Portal RefId Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> check Customer Reference Displayed]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions	arget="_blank">Screenshot link</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions"></a>]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5027" started-at="2022-09-21T21:23:09Z" finished-at="2022-09-21T21:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="PASS" signature="TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable()[pri:3, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable" duration-ms="7621" started-at="2022-09-21T21:23:14Z" finished-at="2022-09-21T21:23:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> Click Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> check DI Inward Remittance Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5057" started-at="2022-09-21T21:23:22Z" finished-at="2022-09-21T21:23:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="PASS" signature="TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility()[pri:4, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility" duration-ms="10335" started-at="2022-09-21T21:23:27Z" finished-at="2022-09-21T21:23:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> Click Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click Edit Transactions]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> check Transactions Received From Nostro Utility Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5027" started-at="2022-09-21T21:23:38Z" finished-at="2022-09-21T21:23:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="PASS" signature="TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction()[pri:5, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction" duration-ms="15349" started-at="2022-09-21T21:23:43Z" finished-at="2022-09-21T21:23:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> Click Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On Details]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On Transction Button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5155" started-at="2022-09-21T21:23:59Z" finished-at="2022-09-21T21:24:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="PASS" signature="TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction()[pri:6, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction" duration-ms="11333" started-at="2022-09-21T21:24:04Z" finished-at="2022-09-21T21:24:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> Click Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On Details]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On Transction Button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5070" started-at="2022-09-21T21:24:16Z" finished-at="2022-09-21T21:24:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="PASS" signature="TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation()[pri:7, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation" duration-ms="21339" started-at="2022-09-21T21:24:21Z" finished-at="2022-09-21T21:24:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> Click Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On View]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> click On Download]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click Inward Remittance]]>
+            </line>
+            <line>
+              <![CDATA[Step Description--> Click DI Inward Remittance]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5060" started-at="2022-09-21T21:24:43Z" finished-at="2022-09-21T21:24:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="FAIL" signature="TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI()[pri:8, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI" duration-ms="22482" started-at="2022-09-21T21:24:48Z" finished-at="2022-09-21T21:25:10Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.FTI.clickNostroUtility(FTI.java:121)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI(InwardRemittanceTest.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> click Nostro Utility]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI	arget="_blank">Screenshot link</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI"></a>]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5146" started-at="2022-09-21T21:25:11Z" finished-at="2022-09-21T21:25:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="FAIL" signature="TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI()[pri:9, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI" duration-ms="22560" started-at="2022-09-21T21:25:16Z" finished-at="2022-09-21T21:25:38Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.FTI.clickNostroUtility(FTI.java:121)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI(InwardRemittanceTest.java:209)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> click Nostro Utility]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI	arget="_blank">Screenshot link</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI"></a>]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI -->
+        <test-method status="PASS" signature="redirect_Me_To_HomePage_On_FCC_Application(java.lang.reflect.Method)[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="redirect_Me_To_HomePage_On_FCC_Application" is-config="true" duration-ms="5034" started-at="2022-09-21T21:25:39Z" finished-at="2022-09-21T21:25:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- redirect_Me_To_HomePage_On_FCC_Application -->
+        <test-method status="FAIL" signature="TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu()[pri:10, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu" duration-ms="23081" started-at="2022-09-21T21:25:44Z" finished-at="2022-09-21T21:26:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.generic.Utilities.addAssertTakeScreenShot(Utilities.java:399)
+	at com.generic.Utilities.logReporter(Utilities.java:341)
+	at com.kotak.fcc.product.InwardRemittance.FTI.clickNostroUtility(FTI.java:121)
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu(InwardRemittanceTest.java:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:282)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:83)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:114)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Step Description--> click Nostro Utility]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu	arget="_blank">Screenshot link</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a href="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu" target="_blank"><img hight=200 width=200 src="C:\Users\Dilip\git\InwardRemittance/target/surefire-reports/ScreenShot/TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu"></a>]]>
+            </line>
+            <line>
+              <![CDATA[Capturing Screenshot for the Failed test -- TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu -->
+        <test-method status="PASS" signature="tearDownEnvironment()[pri:0, instance:com.Script.kotak.fcc.product.InwardRemittanceTest@2de7fe0e]" name="tearDownEnvironment" is-config="true" duration-ms="14891" started-at="2022-09-21T21:26:07Z" finished-at="2022-09-21T21:26:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownEnvironment -->
+      </class> <!-- com.Script.kotak.fcc.product.InwardRemittanceTest -->
+    </test> <!-- SMOKE TEST SUITE -->
+  </suite> <!-- HMHS- eBenefitSyncTAF UI Test Automation -->
+</testng-results>

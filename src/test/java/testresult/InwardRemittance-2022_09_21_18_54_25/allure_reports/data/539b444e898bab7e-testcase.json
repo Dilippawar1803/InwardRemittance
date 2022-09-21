@@ -1,0 +1,275 @@
+{
+  "uid" : "539b444e898bab7e",
+  "name" : "FCC_CGIRM0019verifyFieldValidationPurposeType",
+  "title" : "FCC_CG_IRM_0019_verifyFieldValidationPurposeType",
+  "time" : {
+    "start" : 1663786796949,
+    "stop" : 1663786832525,
+    "duration" : 35576
+  },
+  "summary" : {
+    "attachments" : 10,
+    "steps" : 11
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "verifyFieldValidationPurposeType",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "7de7ae066babf19b",
+    "name" : "Kotak InwardRemittance",
+    "title" : "Kotak InwardRemittance : SMOKE TEST SUITE"
+  },
+  "steps" : [ {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663786808491,
+      "stop" : 1663786809719,
+      "duration" : 1228
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "0147a103-284e-48a8-84fe-0565881e68ad-attachment.png",
+      "type" : "image/png",
+      "size" : 118340,
+      "uid" : "9c853eb27dea5f97"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663786811365,
+      "stop" : 1663786812583,
+      "duration" : 1218
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "d57cd254-0898-4f09-aa11-8477314fd857-attachment.png",
+      "type" : "image/png",
+      "size" : 115921,
+      "uid" : "d41c5ae1b8fed219"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click Edit Transactions, true]",
+    "title" : "click Edit Transactions",
+    "time" : {
+      "start" : 1663786814284,
+      "stop" : 1663786815512,
+      "duration" : 1228
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "41269355-0dbc-4851-b930-8bb12b601863-attachment.png",
+      "type" : "image/png",
+      "size" : 108160,
+      "uid" : "529089f255d1a588"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[clickFTInquiry, true]",
+    "title" : "clickFTInquiry",
+    "time" : {
+      "start" : 1663786817641,
+      "stop" : 1663786818869,
+      "duration" : 1228
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "e0107e8d-b178-446f-a4d3-c5eb10f1805d-attachment.png",
+      "type" : "image/png",
+      "size" : 104430,
+      "uid" : "4413247b1495b843"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click Next Button, true]",
+    "title" : "click Next Button",
+    "time" : {
+      "start" : 1663786821676,
+      "stop" : 1663786822876,
+      "duration" : 1200
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "9e221537-a6b5-4897-873a-c2b82beae27e-attachment.png",
+      "type" : "image/png",
+      "size" : 110851,
+      "uid" : "6f4971f27c578755"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "verifySubProductDisposal_1",
+    "title" : "verify Sub Product Disposal",
+    "time" : {
+      "start" : 1663786822879,
+      "stop" : 1663786829940,
+      "duration" : 7061
+    },
+    "summary" : {
+      "attachments" : 3,
+      "steps" : 3
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "logReporter[click On type, true]",
+      "title" : "click On type",
+      "time" : {
+        "start" : 1663786824327,
+        "stop" : 1663786825551,
+        "duration" : 1224
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "03d0df7c-432c-46ba-a5cf-1f0c1e2e7be9-attachment.png",
+        "type" : "image/png",
+        "size" : 125695,
+        "uid" : "1e859d0d8059b663"
+      } ],
+      "steps" : [ ]
+    }, {
+      "name" : "logReporter[click On Option, true]",
+      "title" : "click On Option",
+      "time" : {
+        "start" : 1663786827220,
+        "stop" : 1663786828433,
+        "duration" : 1213
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "64000b8e-0010-4b30-9a78-326918049da4-attachment.png",
+        "type" : "image/png",
+        "size" : 111184,
+        "uid" : "6a53afec32ae57da"
+      } ],
+      "steps" : [ ]
+    }, {
+      "name" : "logReporter[Verify Disposal Value, true]",
+      "title" : "Verify Disposal Value",
+      "time" : {
+        "start" : 1663786828718,
+        "stop" : 1663786829940,
+        "duration" : 1222
+      },
+      "summary" : {
+        "attachments" : 1,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ {
+        "title" : "Screenshot",
+        "source" : "65cc545c-e49a-4a87-a172-9a533cdce713-attachment.png",
+        "type" : "image/png",
+        "size" : 111184,
+        "uid" : "5ea7b78ee176b409"
+      } ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "logReporter[Verify Feild mandatory , true]",
+    "title" : "Verify Feild mandatory ",
+    "time" : {
+      "start" : 1663786830019,
+      "stop" : 1663786831227,
+      "duration" : 1208
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "776a8f60-6cad-48fa-9619-94c97eaab6cd-attachment.png",
+      "type" : "image/png",
+      "size" : 111184,
+      "uid" : "886678eb770e409"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Verify Feild mandatory , true]",
+    "title" : "Verify Feild mandatory ",
+    "time" : {
+      "start" : 1663786831317,
+      "stop" : 1663786832525,
+      "duration" : 1208
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "77c4ae0d-268e-4801-af81-134d5745ade3-attachment.png",
+      "type" : "image/png",
+      "size" : 111184,
+      "uid" : "1ab376b0c2bfeecd"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "Kotak InwardRemittance"
+  }, {
+    "name" : "suite-title",
+    "value" : "Kotak InwardRemittance : SMOKE TEST SUITE"
+  }, {
+    "name" : "thread",
+    "value" : "2232@DESKTOP-QM91UED.main"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-QM91UED"
+  } ],
+  "parameters" : [ ]
+}

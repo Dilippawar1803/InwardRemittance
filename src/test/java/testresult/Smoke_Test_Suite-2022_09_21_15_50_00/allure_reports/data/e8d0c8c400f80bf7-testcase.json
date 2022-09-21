@@ -1,0 +1,176 @@
+{
+  "uid" : "e8d0c8c400f80bf7",
+  "name" : "TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation",
+  "title" : "TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation",
+  "time" : {
+    "start" : 1663775661495,
+    "stop" : 1663775682831,
+    "duration" : 21336
+  },
+  "summary" : {
+    "attachments" : 6,
+    "steps" : 6
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "verifyTransactionCopyValidation",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "e2106442298cdfca",
+    "name" : "HMHS- eBenefitSyncTAF UI Test Automation",
+    "title" : "HMHS- eBenefitSyncTAF UI Test Automation : SMOKE TEST SUITE"
+  },
+  "steps" : [ {
+    "name" : "logReporter[Click Inward Remittance, true]",
+    "title" : "Click Inward Remittance",
+    "time" : {
+      "start" : 1663775662884,
+      "stop" : 1663775664092,
+      "duration" : 1208
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "ad18c7c3-be4f-4193-b78a-0307ea9c93a5-attachment.png",
+      "type" : "image/png",
+      "size" : 114616,
+      "uid" : "b2e46c25de0e126c"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663775665930,
+      "stop" : 1663775667138,
+      "duration" : 1208
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "3f92bacc-c0f0-420a-9aa4-dafecddc6c51-attachment.png",
+      "type" : "image/png",
+      "size" : 116318,
+      "uid" : "a9d599357ae91913"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click On View, true]",
+    "title" : "click On View",
+    "time" : {
+      "start" : 1663775669226,
+      "stop" : 1663775671877,
+      "duration" : 2651
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "6fe6be9f-9871-49ce-a782-7631d861ff5a-attachment.png",
+      "type" : "image/png",
+      "size" : 116318,
+      "uid" : "558cf304db543e57"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[click On Download, true]",
+    "title" : "click On Download",
+    "time" : {
+      "start" : 1663775675953,
+      "stop" : 1663775677146,
+      "duration" : 1193
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "7607e9a2-66c0-429e-83a4-53cc3decb643-attachment.png",
+      "type" : "image/png",
+      "size" : 45289,
+      "uid" : "84c96d399633e9aa"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click Inward Remittance, true]",
+    "title" : "Click Inward Remittance",
+    "time" : {
+      "start" : 1663775678859,
+      "stop" : 1663775680080,
+      "duration" : 1221
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "d92909f7-79a6-45ac-9f2b-b55598d7a24e-attachment.png",
+      "type" : "image/png",
+      "size" : 118840,
+      "uid" : "772f6cb480e9f0e3"
+    } ],
+    "steps" : [ ]
+  }, {
+    "name" : "logReporter[Click DI Inward Remittance, true]",
+    "title" : "Click DI Inward Remittance",
+    "time" : {
+      "start" : 1663775681610,
+      "stop" : 1663775682831,
+      "duration" : 1221
+    },
+    "summary" : {
+      "attachments" : 1,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ {
+      "title" : "Screenshot",
+      "source" : "3a13e451-10e0-4f72-8610-66b2a97961ff-attachment.png",
+      "type" : "image/png",
+      "size" : 116318,
+      "uid" : "1fca3634244776f8"
+    } ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "suite-name",
+    "value" : "HMHS- eBenefitSyncTAF UI Test Automation"
+  }, {
+    "name" : "suite-title",
+    "value" : "HMHS- eBenefitSyncTAF UI Test Automation : SMOKE TEST SUITE"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "thread",
+    "value" : "16512@DESKTOP-QM91UED.main"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-QM91UED"
+  } ],
+  "parameters" : [ ]
+}

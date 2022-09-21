@@ -1,0 +1,64 @@
+{
+  "hash" : "e7105c43ada45c9f6e0006854ef1a1d95249231d",
+  "plugins" : {
+    "total" : {
+      "statistic" : {
+        "total" : 16,
+        "passed" : 7,
+        "pending" : 0,
+        "canceled" : 1,
+        "failed" : 2,
+        "broken" : 6
+      },
+      "time" : {
+        "start" : 1663787826604,
+        "stop" : 1663788368174,
+        "duration" : 541570
+      }
+    },
+    "defects" : {
+      "totalCount" : 2,
+      "items" : [ {
+        "count" : 2,
+        "uid" : "d20d9755ef784d05",
+        "message" : "AssertionError: expected [true] but found [false]",
+        "status" : "FAILED"
+      }, {
+        "count" : 6,
+        "uid" : "2b099b30cff8cf2b",
+        "message" : "NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=105.0.5195.127)\nBuild info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'\nSystem info: host: 'DESKTOP-QM91UED', ip: '192.168.244.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\\Users\\Dilip\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 3b8fc49d89dfba42d3ec82f066f63274",
+        "status" : "BROKEN"
+      } ]
+    },
+    "xunit" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "uid" : "ed25f5187626bdb8",
+        "title" : "Kotak InwardRemittance : SMOKE TEST SUITE",
+        "statistic" : {
+          "total" : 16,
+          "passed" : 7,
+          "pending" : 0,
+          "canceled" : 1,
+          "failed" : 2,
+          "broken" : 6
+        }
+      } ]
+    },
+    "behaviors" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "title" : "Without feature",
+        "statistic" : {
+          "total" : 16,
+          "passed" : 7,
+          "pending" : 0,
+          "canceled" : 1,
+          "failed" : 2,
+          "broken" : 6
+        }
+      } ]
+    },
+    "environment" : [ ]
+  }
+}

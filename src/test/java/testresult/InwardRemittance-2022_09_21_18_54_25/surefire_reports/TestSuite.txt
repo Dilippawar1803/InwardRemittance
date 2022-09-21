@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 531.355 sec <<< FAILURE! - in TestSuite
+TCID_FCCCGIRM0008VerifySearchCriteriaTransactions(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 38.499 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM0008VerifySearchCriteriaTransactions(InwardRemittanceTest.java:111)
+
+FCC_CGIRM0017verifySubProductDisposalInstructions(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 0.054 sec  <<< FAILURE!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0017verifySubProductDisposalInstructions(InwardRemittanceTest.java:198)
+Caused by: java.lang.NullPointerException
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0017verifySubProductDisposalInstructions(InwardRemittanceTest.java:198)
+
+FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 22.372 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance(InwardRemittanceTest.java:278)
+
+FCC_CGIRM0023verifyInwardRemittanceSwiftDetails(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 35.178 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.FCC_CGIRM0023verifyInwardRemittanceSwiftDetails(InwardRemittanceTest.java:300)
+
+TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI(InwardRemittanceTest.java:313)
+Caused by: java.lang.NullPointerException
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI(InwardRemittanceTest.java:313)
+
+TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI(InwardRemittanceTest.java:327)
+Caused by: java.lang.NullPointerException
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI(InwardRemittanceTest.java:327)
+
+TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu(com.Script.kotak.fcc.product.InwardRemittanceTest)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.RuntimeException: java.lang.NullPointerException
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu(InwardRemittanceTest.java:345)
+Caused by: java.lang.NullPointerException
+	at com.Script.kotak.fcc.product.InwardRemittanceTest.TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu(InwardRemittanceTest.java:345)
+

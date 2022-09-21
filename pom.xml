@@ -6,8 +6,8 @@
 <properties>
 		<!-- Test suite name -->
 		<!-- For execution of testng.xml use following -->
-		<suiteName>Smoke_Test_Suite</suiteName>
-		<suiteXMLpath>Smoke_Test_Suite</suiteXMLpath>
+		<suiteName>InwardRemittance</suiteName>
+		<suiteXMLpath>InwardRemittance</suiteXMLpath>
 		<!-- For execution of suites use following -->
 		<!-- <suiteName>TestNG</suiteName> <suiteXMLpath>midoffice/MidOffice1</suiteXMLpath> -->
 		<!-- Maven -->
