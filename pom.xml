@@ -425,7 +425,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-	</build>
+	</build> 
 
 	<!-- Reporting Configuration -->
 	<reporting>
