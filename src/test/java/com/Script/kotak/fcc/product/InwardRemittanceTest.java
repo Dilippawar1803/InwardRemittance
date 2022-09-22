@@ -190,9 +190,28 @@ public class InwardRemittanceTest extends BaseTest{
 		objIR.clickOnDownload(windowUrl);
 		objCommonFlow.navigateToDIInwardRemittance();
 	}
+	@Title("FCC_CGIRM0023verifyInwardRemittanceSwiftDetails")
+	@Description("verifyInwardRemittanceSwiftDetails")
+	@Test(priority = 8, groups = { "InwardRemittance_Verification" })
+	public void FCC_CGIRM0023verifyInwardRemittanceSwiftDetails() {
+		this.loadTestData("FCC_CGIRM0023verifyInwardRemittanceSwiftDetails");
+		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
+			throw new SkipException("Run Mode 'No'");
+		}
+//		objCommonFlow.openAUT_URL();
+//		objLoginLogoutFlow.doLoginFCC();
+//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToDIInwardRemittance();
+		objIR.clickEditTransactions();
+		objIR.clickEditIcon();
+		testdata = objIRGeneralDetails.getSwiftFT();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		
+	}
+	
 	@Title("FCC_CG_IRM_0017_verifySubProductDisposalInstructions")
 	@Description("verifyTransactionCopyValidation")
-	@Test(priority = 8, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 9, groups = { "InwardRemittance_Verification" })
 	public void FCC_CGIRM0017verifySubProductDisposalInstructions() {
 		this.loadTestData("FCC_CG_IRM_0017_verifySubProductDisposalInstructions");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
@@ -219,7 +238,7 @@ public class InwardRemittanceTest extends BaseTest{
 	
 	@Title("FCC_CG_IRM_0019_verifyFieldValidationPurposeType")
 	@Description("verifyFieldValidationPurposeType")
-	@Test(priority = 9, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 10, groups = { "InwardRemittance_Verification" })
 	public void FCC_CGIRM0019verifyFieldValidationPurposeType() {
 		this.loadTestData("FCC_CG_IRM_0019_verifyFieldValidationPurposeType");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
@@ -243,7 +262,7 @@ public class InwardRemittanceTest extends BaseTest{
 	
 	@Title("FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance")
 	@Description("verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance")
-	@Test(priority = 10, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 11, groups = { "InwardRemittance_Verification" })
 	public void FCC_CGIRM0020verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance() {
 		this.loadTestData("FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
@@ -265,7 +284,7 @@ public class InwardRemittanceTest extends BaseTest{
 	}
 	@Title("FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance")
 	@Description("verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance")
-	@Test(priority = 11, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 12, groups = { "InwardRemittance_Verification" })
 	public void FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance() {
 		this.loadTestData("FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
@@ -286,24 +305,7 @@ public class InwardRemittanceTest extends BaseTest{
 		objIRDisposalInstructionDetails.verifyUnderlyingInvoiceField();
 		
 	}
-	@Title("FCC_CGIRM0023verifyInwardRemittanceSwiftDetails")
-	@Description("verifyInwardRemittanceSwiftDetails")
-	@Test(priority = 12, groups = { "InwardRemittance_Verification" })
-	public void FCC_CGIRM0023verifyInwardRemittanceSwiftDetails() {
-		this.loadTestData("FCC_CGIRM0023verifyInwardRemittanceSwiftDetails");
-		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
-			throw new SkipException("Run Mode 'No'");
-		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
-		objCommonFlow.navigateToDIInwardRemittance();
-		objIR.clickEditTransactions();
-		objIR.clickEditIcon();
-		testdata = objIRGeneralDetails.getSwiftFT();
-		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
-		
-	}
+	
 	
 	@Title("TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI")
 	@Description("verifyPullBackMenuOptionsInFTI")
