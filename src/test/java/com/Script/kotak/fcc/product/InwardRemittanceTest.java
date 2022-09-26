@@ -22,11 +22,11 @@ import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Title;
 
 public class InwardRemittanceTest extends BaseTest{
-	// Global variables
+	// Global variables 
 		private CommonFlow objCommonFlow;
 		private LoginLogoutFlow objLoginLogoutFlow;
 		private String testCaseID="";
-		private IR objIR;
+		private IR objIR; 
 		private IRGeneralDetails objIRGeneralDetails;
 		private IRAttachment objIRAttachment;
 		private FTI objFTI;
@@ -85,7 +85,7 @@ public class InwardRemittanceTest extends BaseTest{
 	@Title("TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification")
 	@Description("VerifyMessageToBank_MenuOptions_Verification")
 	@Test(priority = 1, groups = { "InwardRemittance_Verification" })
-	public void TCIDFCCCGIRM001MessageToBankMenuOptionsVerification() {
+	public void TCID_FCCCGIRM001MessageToBankMenuOptionsVerification() {
 		this.loadTestData("FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
@@ -104,9 +104,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.verifySearchCriteriaTransactions();
 	}
@@ -119,9 +119,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.checkDIInwardRemittanceDisplayed();
 	}
@@ -134,9 +134,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.clickEditTransactions();
 		objIR.checkTransactionsReceivedFromNostroUtilityDisplayed();
@@ -150,9 +150,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.clickOnDetails();
         objIR.clickOnTransctionButton();
@@ -166,9 +166,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.clickOnDetails();
         objIR.clickOnTransctionButton();
@@ -182,9 +182,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		String windowUrl = objIR.clickOnView();
 		objIR.clickOnDownload(windowUrl);
@@ -198,9 +198,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.clickEditTransactions();
 		objIR.clickEditIcon();
@@ -217,9 +217,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.clickEditTransactions();
 		objIR.clickEditIcon();
@@ -228,12 +228,10 @@ public class InwardRemittanceTest extends BaseTest{
 		testdataone = objIRGeneralDetails.getSettledAmount();
 		System.out.println(testdata+"getSettledAmount");
 		objIRGeneralDetails.clickNextButton();
-		
-		objInwardRemittanceView.verifySubProductDisposal_1();
-		objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
 		objInwardRemittanceView.verifySubProductDisposal();
-//		objIRDisposalInstructionDetails.verifySubProductDisposal(optionTwo);
-//		objIRDisposalInstructionDetails.verifySubProductDisposal(optionThree);
+		//objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
+		
+
 	}
 	
 	@Title("FCC_CG_IRM_0019_verifyFieldValidationPurposeType")
@@ -244,9 +242,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.clickEditTransactions();
 		objIR.clickEditIcon();
@@ -255,8 +253,8 @@ public class InwardRemittanceTest extends BaseTest{
 		testdataone = objIRGeneralDetails.getSettledAmount();
 		System.out.println(testdata+"getSettledAmount");
 		objIRGeneralDetails.clickNextButton();
-		objInwardRemittanceView.verifySubProductDisposal_1();
-		objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
+		objInwardRemittanceView.verifySubProductDisposal();
+	//	objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
 		
 	}
 	
@@ -268,9 +266,9 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.clickEditTransactions();
 		objIR.clickEditIcon();
@@ -290,10 +288,10 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
-//		objCommonFlow.openAUT_URL();
-//		objLoginLogoutFlow.doLoginFCC();
-//		objCommonFlow.clickOnTradeLink();
-//		objCommonFlow.navigateToDIInwardRemittance();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.clickEditTransactions();
 		objIR.clickEditIcon();
 		testdata = objIRGeneralDetails.getSwiftFT();
@@ -357,31 +355,88 @@ public class InwardRemittanceTest extends BaseTest{
 
 	}
 		
-//	@Title("TCID_FCC_CG_IRM_002_MessageToBank_EditTransactions_Validation")
-//	@Description("VerifyMessageToBank_EditTransactions_Validation")
-//	@Test(priority = 3, groups = { "InwardRemittance_Verification" })
-//	public void TCID_FCC_CG_IRM_002_MessageToBank_EditTransactions_Validation() {
-//		this.loadTestData("TCID_FCC_CG_IRM_002_MessageToBank_EditTransactions_Validation");
-//		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
-//			throw new SkipException("Run Mode 'No'");
-//		}
-//		
-//		objCommonFlow.navigateToInwardRemittance();
-//		
-//		objIR.clickRequestToBankIcon();
-//        objIRGeneralDetails.setInstructions("abcdefg");
-//        objIRGeneralDetails.clickSaveButton();
+	@Title("FCC_CGIRM002MessageToBankEditTransactionsValidation")
+	@Description("VerifyMessageToBank_EditTransactions_Validation")
+	@Test(priority = 13, groups = { "InwardRemittance_Verification" })
+	public void FCC_CGIRM002MessageToBankEditTransactionsValidation() {
+		this.loadTestData("FCC_CGIRM002MessageToBankEditTransactionsValidation");
+		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
+			throw new SkipException("Run Mode 'No'");
+		}
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickRequestToBankIcon();
+        objIRGeneralDetails.setInstructions("abcdefg");
+        objIRGeneralDetails.clickSaveButton();
+        objIRGeneralDetails.clickNextButton();
+        objCommonFlow.navigateToInwardRemittance();
+        objIR.clickEditTransactions();
+//        objDashboardPage.verifyPortalRef(dpString("ReferanceNumber"));
+//        objIR.clickEditIcon();
 //        objIRGeneralDetails.clickNextButton();
-//        objCommonFlow.navigateToInwardRemittance();
-//        objIR.clickEditTransactions();
-////        objDashboardPage.verifyPortalRef(dpString("ReferanceNumber"));
-////        objIR.clickEditIcon();
-////        objIRGeneralDetails.clickNextButton();
-////        objIRAttachment.Attachment();
-////        objIRGeneralDetails.clickNextButton();
-////        objIRGeneralDetails.clickSubmitButton();
-//
-//
-//	}
+//        objIRAttachment.Attachment();
+//        objIRGeneralDetails.clickNextButton();
+//        objIRGeneralDetails.clickSubmitButton();
 
+
+	}
+
+	@Title("FCC_CGIRM003MessageToBankEditTransactionsValidation")
+	@Description("VerifyMessageToBankEditTransactionsValidation")
+	@Test(priority = 14, groups = { "InwardRemittance_Verification" })
+	public void FCC_CGIRM003MessageToBankEditTransactionsValidation() {
+		this.loadTestData("FCC_CGIRM003MessageToBankEditTransactionsValidation");
+		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
+			throw new SkipException("Run Mode 'No'");
+		}
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickRequestToBankIcon();
+        objIRGeneralDetails.setInstructions("abcdefg");
+        objIRGeneralDetails.clickSaveButton();
+        objIRGeneralDetails.clickNextButton();
+        objCommonFlow.navigateToInwardRemittance();
+        objIR.clickEditTransactions();
+//        objDashboardPage.verifyPortalRef(dpString("ReferanceNumber"));
+//        objIR.clickEditIcon();
+//        objIRGeneralDetails.clickNextButton();
+//        objIRAttachment.Attachment();
+//        objIRGeneralDetails.clickNextButton();
+//        objIRGeneralDetails.clickSubmitButton();
+
+
+	}
+	@Title("FCC_CGIRM004MessageToBankReviewTransactionsReturn")
+	@Description("MessageToBankReviewTransactionsReturn")
+	@Test(priority = 15, groups = { "InwardRemittance_Verification" })
+	public void FCC_CGIRM004MessageToBankReviewTransactionsReturn() {
+		this.loadTestData("FCC_CGIRM004MessageToBankReviewTransactionsReturn");
+		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
+			throw new SkipException("Run Mode 'No'");
+		}
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickRequestToBankIcon();
+        objIRGeneralDetails.setInstructions("abcdefg");
+        objIRGeneralDetails.clickSaveButton();
+        objIRGeneralDetails.clickNextButton();
+        objCommonFlow.navigateToInwardRemittance();
+        objIR.clickEditTransactions();
+//        objDashboardPage.verifyPortalRef(dpString("ReferanceNumber"));
+//        objIR.clickEditIcon();
+//        objIRGeneralDetails.clickNextButton();
+//        objIRAttachment.Attachment();
+//        objIRGeneralDetails.clickNextButton();
+//        objIRGeneralDetails.clickSubmitButton();
+
+
+	}
+	
+	
 }
