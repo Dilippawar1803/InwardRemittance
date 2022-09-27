@@ -41,7 +41,31 @@ public class FTI {
 	By imgView = By.xpath("//span//img[@title='View']");
 
 	By download = By.xpath("//em[@class='fa fa-file-pdf-o pdfIcon']");
+	By user = By.xpath("//input[@id='username']");
+	By userPassword = By.xpath("//input[@id='password']");
+	By btnLogin = By.xpath("//button[@id='login']");
+	By zoneList = By.xpath("//table[@id='managezones:zones']//tbody//tr");
+	
+	public void setUserIDForFTI(String userID) {
+		objPojo.getObjUtilities().logReporter("Set User Name For FTI", userID,
+				objPojo.getObjWrapperFunctions().setText(user, userID));
+	}
 
+	public void setPasswordForFTI(String password) {
+		objPojo.getObjUtilities().logReporter("Set password For FTI", password,
+				objPojo.getObjWrapperFunctions().setText(userPassword, password));
+	}
+
+	public void clickOnSignInButton() {
+		objPojo.getObjUtilities().logReporter("click On Sign In Button For FTI",
+				objPojo.getObjWrapperFunctions().click(btnLogin));
+	}
+	
+	public void clickOnZoneList() {
+		objPojo.getObjUtilities().logReporter("click On Zone List For FTI",
+				objPojo.getObjWrapperFunctions().click(zoneList));
+	}
+	
 	public void setRefranceNumber(String refNumber) {
 		objPojo.getObjUtilities().logReporter("Verify user can enter '" + refNumber + "' in filter ",
 				objPojo.getObjWrapperFunctions().setText(refranceNumber, refNumber));
@@ -118,6 +142,8 @@ public class FTI {
 	}
 	
 	public void clickNostroUtility() {
+		objPojo.getObjUtilities().logReporter("Scroll to Nostro Utility",
+				objPojo.getObjWrapperFunctions().scrollToView(nostroUtility));
 		objPojo.getObjUtilities().logReporter("click Nostro Utility",
 				objPojo.getObjWrapperFunctions().click(nostroUtility));
 	}

@@ -19,7 +19,6 @@ public class LoginPage {
 	}
 
 	// headers
-	By loc_hdreMedicareSync=By.xpath("//div[@class='text-center client-logo']//img[@title='eMedicareSync'][@alt='eMedicareSync']");
 	By loc_inpUsername = By.xpath("//input[@id='userName']");
 	By loc_inpPassword = By.xpath("//input[@id='credentialInputField']");
 	By loc_btnNext = By.xpath("//button[text()='Next']");

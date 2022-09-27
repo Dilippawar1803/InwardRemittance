@@ -163,9 +163,10 @@ public class CommonFlow {
 
 
 	@Step("Open AUT_URL")
-	public void openAUT_URL(String strUrl) {
-		if (!strUrl.equals(""))
-			objPojo.getObjUtilities().logReporter("Open AUT URL -----> ", strUrl, objPojo.getObjWrapperFunctions().getUrl(strUrl));
+	public void openAUT_URL_FTI() {
+		String strUrl=objPojo.getObjConfig().getProperty("AUT_URL_FTI");
+		Constants.baseURL=strUrl;
+		objPojo.getObjUtilities().logReporter("Open AUT URL -----> "+strUrl,objPojo.getObjWrapperFunctions().getUrl(strUrl));
 	}
 
 

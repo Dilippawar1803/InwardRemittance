@@ -1,10 +1,11 @@
 package com.flows;
 
 import com.flows.commonFlows.CommonFlow;
-
 import com.generic.Pojo;
+import com.kotak.fcc.product.InwardRemittance.FTI;
 import com.pageFactory.LoginPage;
 import com.popupFactory.LogOffPopupPage;
+
 import ru.yandex.qatools.allure.annotations.Step;
 
 
@@ -19,24 +20,35 @@ public class LoginLogoutFlow {
 	// Reference object of Pages
 	private LoginPage objLoginPage;
 	private LogOffPopupPage objLogOffPopupPage;
+	private FTI objFTI;
 
 	// Constructor of class
 	public LoginLogoutFlow(Pojo pojo) {
 		this.objPojo = pojo;
 		objLoginPage = new LoginPage(objPojo);
+		objFTI = new FTI(objPojo);
 		new CommonFlow(objPojo);
 		objLogOffPopupPage = new LogOffPopupPage(objPojo);
 	}
 
 	
 
-	@Step("Login into the system.")
+	@Step("Login into the system for FCC")
 	public void doLoginFCC() {
 		objLoginPage.setUserID(objPojo.getObjConfig().getProperty("userid"));
 		objLoginPage.clickOnNextBuoon();
 		objLoginPage.setPassword(objPojo.getObjConfig().getProperty("userpasswd"));
 		objLoginPage.clickOnSecureLoginButton();
 		objLoginPage.verifyUserLoggedIn(objPojo.getObjConfig().getProperty("loginTitle"));
+	}
+	
+	@Step("Login into the system For FTI ")
+	public void doLoginFTI() {
+		objFTI.setUserIDForFTI(objPojo.getObjConfig().getProperty("useridFTI"));
+		
+		objFTI.setPasswordForFTI(objPojo.getObjConfig().getProperty("userpasswdFTI"));
+		objFTI.clickOnSignInButton();
+		objFTI.verifyUserLoggedIn(objPojo.getObjConfig().getProperty("loginTitleFTI"));
 	}
 	
 	

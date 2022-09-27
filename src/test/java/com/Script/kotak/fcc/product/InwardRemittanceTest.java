@@ -90,6 +90,12 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickNostroUtility();
+		objFTI.clickOnStartButton();
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
