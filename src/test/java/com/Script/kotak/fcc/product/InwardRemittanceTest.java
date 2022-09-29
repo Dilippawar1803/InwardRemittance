@@ -97,7 +97,7 @@ public class InwardRemittanceTest extends BaseTest{
 		// Fcc
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
-		// FTI
+		// FTI 
 		objCommonFlow.openAUT_URL_FTI();
 		objLoginLogoutFlow.doLoginFTI();
 		objFTI.clickOnZoneList();
