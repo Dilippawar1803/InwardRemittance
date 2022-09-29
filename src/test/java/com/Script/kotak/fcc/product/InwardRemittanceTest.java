@@ -90,12 +90,27 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
 		objCommonFlow.openAUT_URL_FTI();
 		objLoginLogoutFlow.doLoginFTI();
 		objFTI.clickOnZoneList();
 		objFTI.clickOnStartButton();
-		objFTI.clickNostroUtility();
+		objFTI.clickOnCleanPaymentProcessing();
 		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		//Fcc
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();

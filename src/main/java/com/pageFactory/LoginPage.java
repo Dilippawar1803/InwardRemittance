@@ -24,11 +24,7 @@ public class LoginPage {
 	By loc_btnNext = By.xpath("//button[text()='Next']");
 	By loc_btnSecureLogin = By.xpath("//button[text()='Secure login']");
 	
-	public void verifyUserIsOneMedicareSyncLoginPage(){
-		objPojo.getObjWrapperFunctions().checkElementDisplayed(loc_hdreMedicareSync);
-		objPojo.getObjUtilities().logReporter("Verify user is on the login page of eMedicareSync", objPojo.getObjWrapperFunctions().checkElementDisplayed(loc_hdreMedicareSync));
-	}
-
+	
 	public void setUserID(String userID) {
 		objPojo.getObjUtilities().logReporter("Set user name", userID,
 				objPojo.getObjWrapperFunctions().setText(loc_inpUsername, userID));

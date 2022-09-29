@@ -32,7 +32,8 @@ public class LoginLogoutFlow {
 	}
 
 	
-
+	
+//This method is for login into Fcc with valid user name and password
 	@Step("Login into the system for FCC")
 	public void doLoginFCC() {
 		objLoginPage.setUserID(objPojo.getObjConfig().getProperty("userid"));
@@ -41,7 +42,7 @@ public class LoginLogoutFlow {
 		objLoginPage.clickOnSecureLoginButton();
 		objLoginPage.verifyUserLoggedIn(objPojo.getObjConfig().getProperty("loginTitle"));
 	}
-	
+	//This method is for login into FTI with valid user name and password
 	@Step("Login into the system For FTI ")
 	public void doLoginFTI() {
 		objFTI.setUserIDForFTI(objPojo.getObjConfig().getProperty("useridFTI"));

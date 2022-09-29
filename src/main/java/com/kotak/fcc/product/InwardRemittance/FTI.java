@@ -55,19 +55,23 @@ public class FTI {
 	By btnOpen = By.xpath("//button[@id='_id3:OpenCleanPaymentsMasterWP_OpenMaster']");
 	By btnContinue= By.xpath("//button[@id='_id3:CPayCustomerInMasterWP_CurrentEventsP_ContinueStep']");
 	
+	
+	//This method for Contuine Search master no and click on matser no in FTI
 	public void clickOnContinueButton() {
 		objPojo.getObjUtilities().logReporter("click On Continue Button For FTI",
 				objPojo.getObjWrapperFunctions().click(btnContinue));
 	}
-	
+	// This method for Open Search master no and click on matser no in FTI
 	public void clickOnOpenButton() {
 		objPojo.getObjUtilities().logReporter("click On Open Button For FTI",
 				objPojo.getObjWrapperFunctions().click(btnOpen));
 	}
+	// This method for Select Search master no and click on matser no in FTI
 	public void clickOnMasterBrowserResult() {
 		objPojo.getObjUtilities().logReporter("click On Master Browser Result For FTI",
 				objPojo.getObjWrapperFunctions().click(masterBrowserResult));
 	}
+	// This method for Refresh Button in FTI
 	public void clickOnRefreshButton() {
 		objPojo.getObjUtilities().logReporter("click On Refresh Button For FTI",
 				objPojo.getObjWrapperFunctions().click(btnRegresh));
@@ -80,33 +84,36 @@ public class FTI {
 		objPojo.getObjUtilities().logReporter("Set open Master For FTI", userID,
 				objPojo.getObjWrapperFunctions().setText(inpOpenMaster, userID));
 	}
-	public void fileUploadSwiftMessage(String userID) {
-		objPojo.getObjUtilities().logReporter("Set User Name For FTI", userID,
-				objPojo.getObjWrapperFunctions().setText(user, userID));
+	public void fileUploadSwiftMessage(String fileName) {
+		objPojo.getObjUtilities().logReporter("Set User Name For FTI", fileName,
+				objPojo.getObjWrapperFunctions().uploadFile(fileName, "30"));
 	}
-	public void selectMessageTypeFromThemeBridge(String type) {
-		objPojo.getObjUtilities().logReporter("Select Message For ThemeBridge", type,
-				objPojo.getObjWrapperFunctions().Select(user, type));
+	public void selectMessageTypeFromThemeBridge(String Option) {
+		objPojo.getObjUtilities().logReporter("Select Message For ThemeBridge", Option,
+				objPojo.getObjWrapperFunctions().selectDropDownOption(messageTpye, Option, "Value"));
 	}
-
+	//This method is for Set Password in FTI
 	public void setPasswordForFTI(String password) {
 		objPojo.getObjUtilities().logReporter("Set password For FTI", password,
 				objPojo.getObjWrapperFunctions().setText(userPassword, password));
 	}
-	
+	//This method is for click on Browser Button In left menu in FTI
 	public void clickOnMasterBrowserButton() {
 		objPojo.getObjUtilities().logReporter("click On Master Browser Button For FTI",
 				objPojo.getObjWrapperFunctions().click(btnMasterBrowser));
 	}
+	//This method is for click on clean Payment Processing Zone list in FTI
 	public void clickOnCleanPaymentProcessing() {
 		objPojo.getObjUtilities().logReporter("click On clean Payment Processing  For FTI",
 				objPojo.getObjWrapperFunctions().click(cleanPayment));
 	}
+	//This method is for click on Sigh in Button in FTI
 	public void clickOnSignInButton() {
 		objPojo.getObjUtilities().logReporter("click On Sign In Button For FTI",
 				objPojo.getObjWrapperFunctions().click(btnLogin));
 	}
 	
+	//This method is for click on Zone list in FTI
 	public void clickOnZoneList() {
 		objPojo.getObjUtilities().logReporter("click On Zone List For FTI",
 				objPojo.getObjWrapperFunctions().click(zoneList));

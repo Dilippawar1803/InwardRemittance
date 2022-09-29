@@ -161,21 +161,23 @@ public class CommonFlow {
 		objPojo.getObjWrapperFunctions().switchToDefaultContent();
 	}
 
-
+	// This method for open FTI Url
 	@Step("Open AUT_URL FTI")
 	public void openAUT_URL_FTI() {
 		String strUrl=objPojo.getObjConfig().getProperty("AUT_URL_FTI");
 		Constants.baseURL=strUrl;
 		objPojo.getObjUtilities().logReporter("Open AUT URL -----> "+strUrl,objPojo.getObjWrapperFunctions().getUrl(strUrl));
 	}
+	
+	// This method for open Theme Bridge Url
 	@Step("AUT_URL_ThemeBridge")
-	public void AUT_URL_ThemeBridge() {
+	public void openAUT_URL_ThemeBridge() {
 		String strUrl=objPojo.getObjConfig().getProperty("AUT_URL_ThemeBridge");
 		Constants.baseURL=strUrl;
 		objPojo.getObjUtilities().logReporter("Open AUT URL -----> "+strUrl,objPojo.getObjWrapperFunctions().getUrl(strUrl));
 	}
 	
-
+	// This method for open FCC Url
 	@Step("Open AUT_URL")
 	public void openAUT_URL() {
 		String strUrl=objPojo.getObjConfig().getProperty("AUT_URL");

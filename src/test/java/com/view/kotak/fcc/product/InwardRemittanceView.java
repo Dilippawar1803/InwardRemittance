@@ -1,6 +1,7 @@
 package com.view.kotak.fcc.product;
 
 import com.generic.Pojo;
+import com.kotak.fcc.product.InwardRemittance.FTI;
 import com.kotak.fcc.product.InwardRemittance.IRDisposalInstructionDetails;
 import com.kotak.fcc.product.InwardRemittance.IRGeneralDetails;
 
@@ -13,12 +14,13 @@ public class InwardRemittanceView {
 	// Reference object of Pages
 	IRDisposalInstructionDetails objIRDisposalInstructionDetails;
 	IRGeneralDetails objIRGeneralDetails;
-		
+	FTI objFTI;
 		// Constructor of class
 		public InwardRemittanceView(Pojo pojo) {
 			this.objPojo = pojo;
 			objIRDisposalInstructionDetails = new IRDisposalInstructionDetails(objPojo);
 			objIRGeneralDetails = new IRGeneralDetails(objPojo);
+			objFTI = new FTI(objPojo);
 		
 		}
 		@Step("verify Sub Product Disposal")
@@ -39,6 +41,40 @@ public class InwardRemittanceView {
 			objPojo.getObjUtilities().logReporter("Verify Disposal Value", testData.equals(testData1));
 		
 		}
+		// This method is for Upload the document for Theme Bridge ex.103 and 202
+		@Step("verify File Upload From Theme Brizge")
+		public void FileUploadFromThemeBrizge() {
+			testData = objPojo.getObjUtilities().dpString("FileName");
+			if (!testData.equals(""))
+				objFTI.fileUploadSwiftMessage(testData);
+			testData = objPojo.getObjUtilities().dpString("FileName_One");
+			if (!testData.equals(""))
+				objFTI.fileUploadSwiftMessage(testData);
+			testData = objPojo.getObjUtilities().dpString("FileName_Two");
+			if (!testData.equals(""))
+				objFTI.fileUploadSwiftMessage(testData);
+			
+			testData = objPojo.getObjUtilities().dpString("FileName_Three");
+			if (!testData.equals(""))
+				objFTI.fileUploadSwiftMessage(testData);
+		
+		}
+		//This method is select the message type for Theme Bridge
+		@Step("verify select Message Type From Theme Bridge")
+		public void selectMessageTypeFromThemeBridge() {
+			testData = objPojo.getObjUtilities().dpString("MessageOption");
+			if (!testData.equals(""))
+				objFTI.selectMessageTypeFromThemeBridge(testData);
+		}
+		//This method is set Open Master For FTI ex %12345%
+				@Step("verify set Open Master For FTI")
+				public void setOpenMasterForFTI() {
+					testData = objPojo.getObjUtilities().dpString("MasterNo");
+					if (!testData.equals(""))
+						objFTI.setOpenMasterForFTI(testData);
+				}
+				
+		
 		
 		@Step("check Swift All Details Displayed")
 		public void checkSwiftAllDetailsDisplayed() {
