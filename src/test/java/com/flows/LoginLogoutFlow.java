@@ -48,7 +48,7 @@ public class LoginLogoutFlow {
 		
 		objFTI.setPasswordForFTI(objPojo.getObjConfig().getProperty("userpasswdFTI"));
 		objFTI.clickOnSignInButton();
-		objFTI.verifyUserLoggedIn(objPojo.getObjConfig().getProperty("loginTitleFTI"));
+		objLoginPage.verifyUserLoggedIn(objPojo.getObjConfig().getProperty("loginTitleFTI"));
 	}
 	
 	

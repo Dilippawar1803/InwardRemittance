@@ -21,8 +21,10 @@ public class FTI {
 	public FTI(Pojo pojo) {
 		this.objPojo = pojo;
 	}
-
+	
+	By cleanPayment = By.xpath("//span[contains(text(),'Clean Payments Processing')]");
 	By nostroUtility = By.xpath("//span[contains(text(),'Nostro Utility')]");
+	By btnMasterBrowser = By.xpath("//button[contains(text(),'Master browser')]");
 	By startButton = By.xpath("//button[@value='Start...']");
 	By pullBack = By.xpath("//a[text()='Pull Back']");
 	By enquiry = By.xpath("//a[text()='Enquiry']");
@@ -45,17 +47,61 @@ public class FTI {
 	By userPassword = By.xpath("//input[@id='password']");
 	By btnLogin = By.xpath("//button[@id='login']");
 	By zoneList = By.xpath("//table[@id='managezones:zones']//tbody//tr");
+	By messageTpye = By.xpath("//select[@id='type']");
+	By swifMessage = By.xpath("//textarea[@id='swiftMessage']");
+	By inpOpenMaster  = By.xpath("//input[@id='_id3:OpenCleanPaymentsMasterWP_MBFiltersWP_MBFilterGenericWP_ctlArgMasterFilter_ReferenceGroup_Reference2']");
+	By btnRegresh = By.xpath("//button[@id='_id3:OpenCleanPaymentsMasterWP_Refresh']");
+	By masterBrowserResult = By.xpath("//table[@id='_id3:OpenCleanPaymentsMasterWP_MBResultsViewWP_MBResultsMastersWP_ctlResults']//tbody/tr");
+	By btnOpen = By.xpath("//button[@id='_id3:OpenCleanPaymentsMasterWP_OpenMaster']");
+	By btnContinue= By.xpath("//button[@id='_id3:CPayCustomerInMasterWP_CurrentEventsP_ContinueStep']");
 	
+	public void clickOnContinueButton() {
+		objPojo.getObjUtilities().logReporter("click On Continue Button For FTI",
+				objPojo.getObjWrapperFunctions().click(btnContinue));
+	}
+	
+	public void clickOnOpenButton() {
+		objPojo.getObjUtilities().logReporter("click On Open Button For FTI",
+				objPojo.getObjWrapperFunctions().click(btnOpen));
+	}
+	public void clickOnMasterBrowserResult() {
+		objPojo.getObjUtilities().logReporter("click On Master Browser Result For FTI",
+				objPojo.getObjWrapperFunctions().click(masterBrowserResult));
+	}
+	public void clickOnRefreshButton() {
+		objPojo.getObjUtilities().logReporter("click On Refresh Button For FTI",
+				objPojo.getObjWrapperFunctions().click(btnRegresh));
+	}
 	public void setUserIDForFTI(String userID) {
 		objPojo.getObjUtilities().logReporter("Set User Name For FTI", userID,
 				objPojo.getObjWrapperFunctions().setText(user, userID));
+	}
+	public void setOpenMasterForFTI(String userID) {
+		objPojo.getObjUtilities().logReporter("Set open Master For FTI", userID,
+				objPojo.getObjWrapperFunctions().setText(inpOpenMaster, userID));
+	}
+	public void fileUploadSwiftMessage(String userID) {
+		objPojo.getObjUtilities().logReporter("Set User Name For FTI", userID,
+				objPojo.getObjWrapperFunctions().setText(user, userID));
+	}
+	public void selectMessageTypeFromThemeBridge(String type) {
+		objPojo.getObjUtilities().logReporter("Select Message For ThemeBridge", type,
+				objPojo.getObjWrapperFunctions().Select(user, type));
 	}
 
 	public void setPasswordForFTI(String password) {
 		objPojo.getObjUtilities().logReporter("Set password For FTI", password,
 				objPojo.getObjWrapperFunctions().setText(userPassword, password));
 	}
-
+	
+	public void clickOnMasterBrowserButton() {
+		objPojo.getObjUtilities().logReporter("click On Master Browser Button For FTI",
+				objPojo.getObjWrapperFunctions().click(btnMasterBrowser));
+	}
+	public void clickOnCleanPaymentProcessing() {
+		objPojo.getObjUtilities().logReporter("click On clean Payment Processing  For FTI",
+				objPojo.getObjWrapperFunctions().click(cleanPayment));
+	}
 	public void clickOnSignInButton() {
 		objPojo.getObjUtilities().logReporter("click On Sign In Button For FTI",
 				objPojo.getObjWrapperFunctions().click(btnLogin));
@@ -148,6 +194,8 @@ public class FTI {
 				objPojo.getObjWrapperFunctions().click(nostroUtility));
 	}
 	public void clickOnStartButton() {
+		objPojo.getObjUtilities().logReporter("Scroll to Start Button",
+				objPojo.getObjWrapperFunctions().scrollToView(nostroUtility));
 		objPojo.getObjUtilities().logReporter("click Start Button for FTI",
 				objPojo.getObjWrapperFunctions().click(startButton));
 	}
