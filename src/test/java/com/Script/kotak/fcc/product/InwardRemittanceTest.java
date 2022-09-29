@@ -95,7 +95,7 @@ public class InwardRemittanceTest extends BaseTest{
 		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
 		objInwardRemittanceView.FileUploadFromThemeBrizge();
 		// Fcc
-		objCommonFlow.openAUT_URL();
+		objCommonFlow.openAUT_URL(); 
 		objLoginLogoutFlow.doLoginFCC();
 		// FTI 
 		objCommonFlow.openAUT_URL_FTI();
