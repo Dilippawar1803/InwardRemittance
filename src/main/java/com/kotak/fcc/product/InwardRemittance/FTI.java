@@ -206,7 +206,9 @@ public class FTI {
 		objPojo.getObjUtilities().logReporter("click Start Button for FTI",
 				objPojo.getObjWrapperFunctions().click(startButton));
 	}
-
+	
+	
+	
 	public void clickOnPullBack() {
 		objPojo.getObjUtilities().logReporter("click pull Back for FTI",
 				objPojo.getObjWrapperFunctions().click(pullBack));

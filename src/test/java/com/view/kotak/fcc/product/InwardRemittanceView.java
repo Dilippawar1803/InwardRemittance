@@ -73,8 +73,15 @@ public class InwardRemittanceView {
 					if (!testData.equals(""))
 						objFTI.setOpenMasterForFTI(testData);
 				}
+				//This method is Set all the value for FTI
+				@Step("verify select Message Type From Theme Bridge")
+				public void FillAllValues() {
+					testData = objPojo.getObjUtilities().dpString("MessageOption");
+					if (!testData.equals(""))
+						objFTI.selectMessageTypeFromThemeBridge(testData);
+					this.checkSwiftAllDetailsDisplayed();
+				}	
 				
-		
 		
 		@Step("check Swift All Details Displayed")
 		public void checkSwiftAllDetailsDisplayed() {

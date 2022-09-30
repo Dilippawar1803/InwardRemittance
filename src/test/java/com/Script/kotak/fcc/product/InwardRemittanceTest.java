@@ -21,30 +21,31 @@ import com.view.kotak.fcc.product.InwardRemittanceView;
 import ru.yandex.qatools.allure.annotations.Description;
 import ru.yandex.qatools.allure.annotations.Title;
 
-public class InwardRemittanceTest extends BaseTest{
-	// Global variables 
-		private CommonFlow objCommonFlow;
-		private LoginLogoutFlow objLoginLogoutFlow;
-		private String testCaseID="";
-		private IR objIR; 
-		private IRGeneralDetails objIRGeneralDetails;
-		private IRAttachment objIRAttachment;
-		private FTI objFTI;
-		private String testdata="",testdataone="";
-		private IRDisposalInstructionDetails objIRDisposalInstructionDetails;
-		private InwardRemittanceView objInwardRemittanceView;
-		// Initialize Flows
-		public void initializeFlowsAndPages() {
-			objCommonFlow = new CommonFlow(this);
-			objLoginLogoutFlow = new LoginLogoutFlow(this);
-			objIR = new IR(this);
-			objIRGeneralDetails = new IRGeneralDetails(this);
-			objIRAttachment = new IRAttachment(this);
-			objFTI = new FTI(this);
-			objIRDisposalInstructionDetails = new IRDisposalInstructionDetails(this);
-			objInwardRemittanceView = new InwardRemittanceView(this);
-		}
-	
+public class InwardRemittanceTest extends BaseTest {
+	// Global variables
+	private CommonFlow objCommonFlow;
+	private LoginLogoutFlow objLoginLogoutFlow;
+	private String testCaseID = "";
+	private IR objIR;
+	private IRGeneralDetails objIRGeneralDetails;
+	private IRAttachment objIRAttachment;
+	private FTI objFTI;
+	private String testdata = "", testdataone = "", MasterNo;
+	private IRDisposalInstructionDetails objIRDisposalInstructionDetails;
+	private InwardRemittanceView objInwardRemittanceView;
+
+	// Initialize Flows
+	public void initializeFlowsAndPages() {
+		objCommonFlow = new CommonFlow(this);
+		objLoginLogoutFlow = new LoginLogoutFlow(this);
+		objIR = new IR(this);
+		objIRGeneralDetails = new IRGeneralDetails(this);
+		objIRAttachment = new IRAttachment(this);
+		objFTI = new FTI(this);
+		objIRDisposalInstructionDetails = new IRDisposalInstructionDetails(this);
+		objInwardRemittanceView = new InwardRemittanceView(this);
+	}
+
 	@BeforeClass(groups = { "P1", "P2", "P3" })
 	public void initializeEnvironment() {
 		this.initializeWebEnvironment("excel/InwardRemittance");
@@ -60,11 +61,11 @@ public class InwardRemittanceTest extends BaseTest{
 		this.tearDownWebEnvironment();
 		objCommonFlow = null;
 		objLoginLogoutFlow = null;
-		objIR =null;
-		objIRGeneralDetails=null;
-		objFTI=null;
-		objIRDisposalInstructionDetails=null;
-		objInwardRemittanceView=null;
+		objIR = null;
+		objIRGeneralDetails = null;
+		objFTI = null;
+		objIRDisposalInstructionDetails = null;
+		objInwardRemittanceView = null;
 	}
 
 	@BeforeMethod(groups = { "P1", "P2", "P3" })
@@ -75,13 +76,13 @@ public class InwardRemittanceTest extends BaseTest{
 		System.out.println("Video Recording Started ....!!");
 	}
 
-//	@AfterMethod
-//	public void stopVideoRecording(){
-//		this.stopTestExecutionVideoRecording();
-//		this.getObjWrapperFunctions().waitFor(5);
-//		System.out.println("Video Recording Stopped ....!!");
-//	}
-	
+	// @AfterMethod
+	// public void stopVideoRecording(){
+	// this.stopTestExecutionVideoRecording();
+	// this.getObjWrapperFunctions().waitFor(5);
+	// System.out.println("Video Recording Stopped ....!!");
+	// }
+
 	@Title("TCID_FCC_CG_IRM_001_MessageToBank_MenuOptions_Verification")
 	@Description("VerifyMessageToBank_MenuOptions_Verification")
 	@Test(priority = 1, groups = { "InwardRemittance_Verification" })
@@ -95,9 +96,9 @@ public class InwardRemittanceTest extends BaseTest{
 		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
 		objInwardRemittanceView.FileUploadFromThemeBrizge();
 		// Fcc
-		objCommonFlow.openAUT_URL(); 
+		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
-		// FTI 
+		// FTI
 		objCommonFlow.openAUT_URL_FTI();
 		objLoginLogoutFlow.doLoginFTI();
 		objFTI.clickOnZoneList();
@@ -110,13 +111,14 @@ public class InwardRemittanceTest extends BaseTest{
 		objFTI.clickOnMasterBrowserResult();
 		objFTI.clickOnOpenButton();
 		objFTI.clickOnContinueButton();
-		//Fcc
+		// Fcc
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.verifyAllFeileds();
 	}
+
 	@Title("TCID_FCC_CG_IRM_0008_VerifySearchCriteriaTransactions")
 	@Description("VerifySearchCriteriaTransactions")
 	@Test(priority = 2, groups = { "InwardRemittance_Verification" })
@@ -125,13 +127,36 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
+		// Fcc
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.verifySearchCriteriaTransactions();
 	}
-	
+
 	@Title("TCID_FCC_CG_IRM_0010_VerifyMenuOptionsAvailable")
 	@Description("VerifyMenuOptionsAvailable")
 	@Test(priority = 3, groups = { "InwardRemittance_Verification" })
@@ -140,13 +165,34 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		// Fcc
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.checkDIInwardRemittanceDisplayed();
 	}
-	
+
 	@Title("TCID_FCC_CG_IRM_0011_VerifyTransactionsReceivedFromNostroUtility")
 	@Description("VerifyTransactionsReceivedFromNostroUtility")
 	@Test(priority = 4, groups = { "InwardRemittance_Verification" })
@@ -155,6 +201,27 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		// Fcc
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
@@ -162,7 +229,7 @@ public class InwardRemittanceTest extends BaseTest{
 		objIR.clickEditTransactions();
 		objIR.checkTransactionsReceivedFromNostroUtilityDisplayed();
 	}
-	
+
 	@Title("TCID_FCC_CG_IRM_0025_verifyAuditDetailsForInwardRemittanceTransaction")
 	@Description("verifyAuditDetailsForInwardRemittanceTransaction")
 	@Test(priority = 5, groups = { "InwardRemittance_Verification" })
@@ -171,14 +238,34 @@ public class InwardRemittanceTest extends BaseTest{
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.clickOnDetails();
-        objIR.clickOnTransctionButton();
+		objIR.clickOnTransctionButton();
 	}
-	
+
 	@Title("TCID_FCC_CG_IRM_0026_verifyAuditDetailsForRemittanceCreditTransaction")
 	@Description("verifyAuditDetailsForRemittanceCreditTransaction")
 	@Test(priority = 6, groups = { "InwardRemittance_Verification" })
@@ -192,9 +279,9 @@ public class InwardRemittanceTest extends BaseTest{
 		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToDIInwardRemittance();
 		objIR.clickOnDetails();
-        objIR.clickOnTransctionButton();
+		objIR.clickOnTransctionButton();
 	}
-	
+
 	@Title("TCID_FCC_CG_IRM_0034_verifyTransactionCopyValidation")
 	@Description("verifyTransactionCopyValidation")
 	@Test(priority = 7, groups = { "InwardRemittance_Verification" })
@@ -211,6 +298,7 @@ public class InwardRemittanceTest extends BaseTest{
 		objIR.clickOnDownload(windowUrl);
 		objCommonFlow.navigateToDIInwardRemittance();
 	}
+
 	@Title("FCC_CGIRM0023verifyInwardRemittanceSwiftDetails")
 	@Description("verifyInwardRemittanceSwiftDetails")
 	@Test(priority = 8, groups = { "InwardRemittance_Verification" })
@@ -227,9 +315,9 @@ public class InwardRemittanceTest extends BaseTest{
 		objIR.clickEditIcon();
 		testdata = objIRGeneralDetails.getSwiftFT();
 		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
-		
+
 	}
-	
+
 	@Title("FCC_CG_IRM_0017_verifySubProductDisposalInstructions")
 	@Description("verifyTransactionCopyValidation")
 	@Test(priority = 9, groups = { "InwardRemittance_Verification" })
@@ -245,16 +333,15 @@ public class InwardRemittanceTest extends BaseTest{
 		objIR.clickEditTransactions();
 		objIR.clickEditIcon();
 		testdata = objIRGeneralDetails.getSwiftFT();
-		System.out.println(testdata+"swift ");
+		System.out.println(testdata + "swift ");
 		testdataone = objIRGeneralDetails.getSettledAmount();
-		System.out.println(testdata+"getSettledAmount");
+		System.out.println(testdata + "getSettledAmount");
 		objIRGeneralDetails.clickNextButton();
 		objInwardRemittanceView.verifySubProductDisposal();
-		//objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
-		
+		// objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
 
 	}
-	
+
 	@Title("FCC_CG_IRM_0019_verifyFieldValidationPurposeType")
 	@Description("verifyFieldValidationPurposeType")
 	@Test(priority = 10, groups = { "InwardRemittance_Verification" })
@@ -270,15 +357,15 @@ public class InwardRemittanceTest extends BaseTest{
 		objIR.clickEditTransactions();
 		objIR.clickEditIcon();
 		testdata = objIRGeneralDetails.getSwiftFT();
-		System.out.println(testdata+"swift ");
+		System.out.println(testdata + "swift ");
 		testdataone = objIRGeneralDetails.getSettledAmount();
-		System.out.println(testdata+"getSettledAmount");
+		System.out.println(testdata + "getSettledAmount");
 		objIRGeneralDetails.clickNextButton();
 		objInwardRemittanceView.verifySubProductDisposal();
-	//	objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
-		
+		// objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
+
 	}
-	
+
 	@Title("FCC_CG_IRM_0020_verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance")
 	@Description("verifyverifyFieldValidationRealisatiopExportBillsInwardRemittance")
 	@Test(priority = 11, groups = { "InwardRemittance_Verification" })
@@ -294,13 +381,14 @@ public class InwardRemittanceTest extends BaseTest{
 		objIR.clickEditTransactions();
 		objIR.clickEditIcon();
 		testdata = objIRGeneralDetails.getSwiftFT();
-		System.out.println(testdata+"swift ");
+		System.out.println(testdata + "swift ");
 		testdataone = objIRGeneralDetails.getSettledAmount();
-		System.out.println(testdata+"getSettledAmount");
+		System.out.println(testdata + "getSettledAmount");
 		objIRGeneralDetails.clickNextButton();
 		objInwardRemittanceView.verifySubProductDisposal();
-		
+
 	}
+
 	@Title("FCC_CGIRM0021verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance")
 	@Description("verifyFieldValidationPurposeTypeOtherReceiptMISCInwardRemittance")
 	@Test(priority = 12, groups = { "InwardRemittance_Verification" })
@@ -316,16 +404,15 @@ public class InwardRemittanceTest extends BaseTest{
 		objIR.clickEditTransactions();
 		objIR.clickEditIcon();
 		testdata = objIRGeneralDetails.getSwiftFT();
-		System.out.println(testdata+"swift ");
+		System.out.println(testdata + "swift ");
 		testdataone = objIRGeneralDetails.getSettledAmount();
-		System.out.println(testdata+"getSettledAmount");
+		System.out.println(testdata + "getSettledAmount");
 		objIRGeneralDetails.clickNextButton();
 		objInwardRemittanceView.verifySubProductDisposal();
 		objIRDisposalInstructionDetails.verifyUnderlyingInvoiceField();
-		
+
 	}
-	
-	
+
 	@Title("TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI")
 	@Description("verifyPullBackMenuOptionsInFTI")
 	@Test(priority = 16, groups = { "InwardRemittance_Verification" })
@@ -338,13 +425,14 @@ public class InwardRemittanceTest extends BaseTest{
 		objLoginLogoutFlow.doLoginFTI();
 		objFTI.clickOnZoneList();
 		objFTI.clickOnStartButton();
-		
-		 objFTI.clickNostroUtility();
-         objFTI.clickOnStartButton();
-         objFTI.checkPullBackDisplayed();
-         objFTI.clickOnPullBack();
-         objFTI.verifyBullBankOption();
+
+		objFTI.clickNostroUtility();
+		objFTI.clickOnStartButton();
+		objFTI.checkPullBackDisplayed();
+		objFTI.clickOnPullBack();
+		objFTI.verifyBullBankOption();
 	}
+
 	@Title("TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI")
 	@Description("verifyPullBackEnquirySubmenuInFTI")
 	@Test(priority = 17, groups = { "InwardRemittance_Verification" })
@@ -358,15 +446,15 @@ public class InwardRemittanceTest extends BaseTest{
 		objFTI.clickOnZoneList();
 		objFTI.clickOnStartButton();
 		objFTI.clickNostroUtility();
-        objFTI.clickOnStartButton();
-        objFTI.checkPullBackDisplayed();
-        objFTI.clickOnPullBack();
-        objFTI.verifyBullBankOption();
-        objFTI.clickOnPullBackfromFCC();
-        objFTI.verifyPullBackInquiryMenuSearchCriteriaDisplayed();
+		objFTI.clickOnStartButton();
+		objFTI.checkPullBackDisplayed();
+		objFTI.clickOnPullBack();
+		objFTI.verifyBullBankOption();
+		objFTI.clickOnPullBackfromFCC();
+		objFTI.verifyPullBackInquiryMenuSearchCriteriaDisplayed();
 
 	}
-	
+
 	@Title("TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu")
 	@Description("verifyFunctionalityOfPullBackFCCSubmenu")
 	@Test(priority = 19, groups = { "InwardRemittance_Verification" })
@@ -380,15 +468,15 @@ public class InwardRemittanceTest extends BaseTest{
 		objFTI.clickOnZoneList();
 		objFTI.clickOnStartButton();
 		objFTI.clickNostroUtility();
-        objFTI.clickOnStartButton();
-        objFTI.checkPullBackDisplayed();
-        objFTI.clickOnPullBack();
-        objFTI.verifyBullBankOption();
-        objFTI.clickOnPullBackfromFCC();
-        objFTI.verifyPullBackMessageDisplayed();
+		objFTI.clickOnStartButton();
+		objFTI.checkPullBackDisplayed();
+		objFTI.clickOnPullBack();
+		objFTI.verifyBullBankOption();
+		objFTI.clickOnPullBackfromFCC();
+		objFTI.verifyPullBackMessageDisplayed();
 
 	}
-		
+
 	@Title("FCC_CGIRM002MessageToBankEditTransactionsValidation")
 	@Description("VerifyMessageToBank_EditTransactions_Validation")
 	@Test(priority = 13, groups = { "InwardRemittance_Verification" })
@@ -402,18 +490,17 @@ public class InwardRemittanceTest extends BaseTest{
 		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.clickRequestToBankIcon();
-        objIRGeneralDetails.setInstructions("abcdefg");
-        objIRGeneralDetails.clickSaveButton();
-        objIRGeneralDetails.clickNextButton();
-        objCommonFlow.navigateToInwardRemittance();
-        objIR.clickEditTransactions();
-//        objDashboardPage.verifyPortalRef(dpString("ReferanceNumber"));
-//        objIR.clickEditIcon();
-//        objIRGeneralDetails.clickNextButton();
-//        objIRAttachment.Attachment();
-//        objIRGeneralDetails.clickNextButton();
-//        objIRGeneralDetails.clickSubmitButton();
-
+		objIRGeneralDetails.setInstructions("abcdefg");
+		objIRGeneralDetails.clickSaveButton();
+		objIRGeneralDetails.clickNextButton();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickEditTransactions();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		 objIR.clickEditIcon();
+		 objIRGeneralDetails.clickNextButton();
+		 objIRAttachment.Attachment("FileName");
+		 objIRGeneralDetails.clickNextButton();
+		 objIRGeneralDetails.clickSubmitButton();
 
 	}
 
@@ -430,20 +517,20 @@ public class InwardRemittanceTest extends BaseTest{
 		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.clickRequestToBankIcon();
-        objIRGeneralDetails.setInstructions("abcdefg");
-        objIRGeneralDetails.clickSaveButton();
-        objIRGeneralDetails.clickNextButton();
-        objCommonFlow.navigateToInwardRemittance();
-        objIR.clickEditTransactions();
-//        objDashboardPage.verifyPortalRef(dpString("ReferanceNumber"));
-//        objIR.clickEditIcon();
-//        objIRGeneralDetails.clickNextButton();
-//        objIRAttachment.Attachment();
-//        objIRGeneralDetails.clickNextButton();
-//        objIRGeneralDetails.clickSubmitButton();
-
+		objIRGeneralDetails.setInstructions("abcdefg");
+		objIRGeneralDetails.clickSaveButton();
+		objIRGeneralDetails.clickNextButton();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickEditTransactions();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		 objIR.clickEditIcon();
+		 objIRGeneralDetails.clickNextButton();
+		 objIRAttachment.Attachment("FileName");
+		 objIRGeneralDetails.clickNextButton();
+		 objIRGeneralDetails.clickSubmitButton();
 
 	}
+
 	@Title("FCC_CGIRM004MessageToBankReviewTransactionsReturn")
 	@Description("MessageToBankReviewTransactionsReturn")
 	@Test(priority = 15, groups = { "InwardRemittance_Verification" })
@@ -457,20 +544,18 @@ public class InwardRemittanceTest extends BaseTest{
 		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.clickRequestToBankIcon();
-        objIRGeneralDetails.setInstructions("abcdefg");
-        objIRGeneralDetails.clickSaveButton();
-        objIRGeneralDetails.clickNextButton();
-        objCommonFlow.navigateToInwardRemittance();
-        objIR.clickEditTransactions();
-//        objDashboardPage.verifyPortalRef(dpString("ReferanceNumber"));
-//        objIR.clickEditIcon();
-//        objIRGeneralDetails.clickNextButton();
-//        objIRAttachment.Attachment();
-//        objIRGeneralDetails.clickNextButton();
-//        objIRGeneralDetails.clickSubmitButton();
-
+		objIRGeneralDetails.setInstructions("Instruction Message");
+		objIRGeneralDetails.clickSaveButton();
+		objIRGeneralDetails.clickNextButton();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickEditTransactions();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		 objIR.clickEditIcon();
+		 objIRGeneralDetails.clickNextButton();
+		 objIRAttachment.Attachment("FileName");
+		 objIRGeneralDetails.clickNextButton();
+		 objIRGeneralDetails.clickSubmitButton();
 
 	}
-	
-	
+
 }
