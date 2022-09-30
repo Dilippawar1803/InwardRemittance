@@ -52,6 +52,16 @@ public class LoginLogoutFlow {
 		objLoginPage.verifyUserLoggedIn(objPojo.getObjConfig().getProperty("loginTitleFTI"));
 	}
 	
+	//This method is for login into Fcc Checker with valid user name and password
+		@Step("Login into the system For Fcc Checker")
+		public void doLoginFCCChecker() {
+			objFTI.setUserIDForFTI(objPojo.getObjConfig().getProperty("useridFCCChecker"));
+			
+			objFTI.setPasswordForFTI(objPojo.getObjConfig().getProperty("userpasswdFCCChecker"));
+			objFTI.clickOnSignInButton();
+			objLoginPage.verifyUserLoggedIn(objPojo.getObjConfig().getProperty("loginTitleFTI"));
+		}
+	
 	
 	@Step("Login into the system.")
 	public void doLoginWithExcelParameter() {

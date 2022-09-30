@@ -18,6 +18,7 @@ public class IR  {
 		By Review = By.xpath("//div[contains(text(),'Review')]");
 		By record = By.xpath("//tr[@id='rowdata']");
 		By filterButton = By.xpath("//div[@id='accordionHeaderId']");
+		By Details = By.xpath("//span//img[contains(@id,'DETAIL')]");
 		
 		By portalRefId = By.xpath("//input[@id='refId']");
 		By custRefId = By.xpath("//input[@id='custRefId']");
@@ -112,6 +113,12 @@ public void setSearchBoxValue(String portalRef) {
 	objPojo.getObjUtilities().logReporter("Verify user can enter '" + portalRef + "' ",
 			objPojo.getObjWrapperFunctions().setText(SearchBox, portalRef));
 	
+}
+public void checkDetailsAndApprove() {
+	objPojo.getObjUtilities().logReporter("check Request To Bank Icon Displayed",
+			objPojo.getObjWrapperFunctions().checkElementDisplayed(Details));	
+	objPojo.getObjUtilities().logReporter("Click to approve",
+			objPojo.getObjWrapperFunctions().click(Details));	
 }
 
 public void checkRequestToBankIconDisplayed() {

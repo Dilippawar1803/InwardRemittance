@@ -14,8 +14,11 @@ import com.generic.BaseTest;
 import com.kotak.fcc.product.InwardRemittance.FTI;
 import com.kotak.fcc.product.InwardRemittance.IR;
 import com.kotak.fcc.product.InwardRemittance.IRAttachment;
+import com.kotak.fcc.product.InwardRemittance.IRChargesDebitAdditionalDetails;
+import com.kotak.fcc.product.InwardRemittance.IRDeclarations;
 import com.kotak.fcc.product.InwardRemittance.IRDisposalInstructionDetails;
 import com.kotak.fcc.product.InwardRemittance.IRGeneralDetails;
+import com.kotak.fcc.product.InwardRemittance.IRReview;
 import com.view.kotak.fcc.product.InwardRemittanceView;
 
 import ru.yandex.qatools.allure.annotations.Description;
@@ -33,6 +36,9 @@ public class InwardRemittanceTest extends BaseTest {
 	private String testdata = "", testdataone = "", MasterNo;
 	private IRDisposalInstructionDetails objIRDisposalInstructionDetails;
 	private InwardRemittanceView objInwardRemittanceView;
+	private IRChargesDebitAdditionalDetails objIRChargesDebitAdditionalDetails;
+	private IRDeclarations objIRDeclarations;
+	private IRReview objIRReview;
 
 	// Initialize Flows
 	public void initializeFlowsAndPages() {
@@ -44,6 +50,10 @@ public class InwardRemittanceTest extends BaseTest {
 		objFTI = new FTI(this);
 		objIRDisposalInstructionDetails = new IRDisposalInstructionDetails(this);
 		objInwardRemittanceView = new InwardRemittanceView(this);
+		objIRChargesDebitAdditionalDetails = new IRChargesDebitAdditionalDetails(this);
+		objIRDeclarations = new IRDeclarations(this);
+		objIRReview = new IRReview(this);
+
 	}
 
 	@BeforeClass(groups = { "P1", "P2", "P3" })
@@ -111,6 +121,8 @@ public class InwardRemittanceTest extends BaseTest {
 		objFTI.clickOnMasterBrowserResult();
 		objFTI.clickOnOpenButton();
 		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
 		// Fcc
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
@@ -185,6 +197,8 @@ public class InwardRemittanceTest extends BaseTest {
 		objFTI.clickOnMasterBrowserResult();
 		objFTI.clickOnOpenButton();
 		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
 		// Fcc
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
@@ -221,6 +235,8 @@ public class InwardRemittanceTest extends BaseTest {
 		objFTI.clickOnMasterBrowserResult();
 		objFTI.clickOnOpenButton();
 		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
 		// Fcc
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
@@ -338,7 +354,7 @@ public class InwardRemittanceTest extends BaseTest {
 		System.out.println(testdata + "getSettledAmount");
 		objIRGeneralDetails.clickNextButton();
 		objInwardRemittanceView.verifySubProductDisposal();
-		// objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
+		objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
 
 	}
 
@@ -350,6 +366,7 @@ public class InwardRemittanceTest extends BaseTest {
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
@@ -362,7 +379,7 @@ public class InwardRemittanceTest extends BaseTest {
 		System.out.println(testdata + "getSettledAmount");
 		objIRGeneralDetails.clickNextButton();
 		objInwardRemittanceView.verifySubProductDisposal();
-		// objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
+		objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
 
 	}
 
@@ -415,7 +432,7 @@ public class InwardRemittanceTest extends BaseTest {
 
 	@Title("TCID_FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI")
 	@Description("verifyPullBackMenuOptionsInFTI")
-	@Test(priority = 16, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 13, groups = { "InwardRemittance_Verification" })
 	public void TCID_FCCCGIRM031verifyPullBackMenuOptionsInFTI() {
 		this.loadTestData("FCC_CG_IRM_031_verifyPullBackMenuOptionsInFTI");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
@@ -435,7 +452,7 @@ public class InwardRemittanceTest extends BaseTest {
 
 	@Title("TCID_FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI")
 	@Description("verifyPullBackEnquirySubmenuInFTI")
-	@Test(priority = 17, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 14, groups = { "InwardRemittance_Verification" })
 	public void TCID_FCCCGIRM032verifyPullBackEnquirySubmenuInFTI() {
 		this.loadTestData("FCC_CG_IRM_032_verifyPullBackEnquirySubmenuInFTI");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
@@ -457,7 +474,7 @@ public class InwardRemittanceTest extends BaseTest {
 
 	@Title("TCID_FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu")
 	@Description("verifyFunctionalityOfPullBackFCCSubmenu")
-	@Test(priority = 19, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 15, groups = { "InwardRemittance_Verification" })
 	public void TCID_FCCCGIRM033verifyFunctionalityOfPullBackFCCSubmenu() {
 		this.loadTestData("FCC_CG_IRM_033_verifyFunctionalityOfPullBackFCCSubmenu");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
@@ -479,12 +496,34 @@ public class InwardRemittanceTest extends BaseTest {
 
 	@Title("FCC_CGIRM002MessageToBankEditTransactionsValidation")
 	@Description("VerifyMessageToBank_EditTransactions_Validation")
-	@Test(priority = 13, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 16, groups = { "InwardRemittance_Verification" })
 	public void FCC_CGIRM002MessageToBankEditTransactionsValidation() {
 		this.loadTestData("FCC_CGIRM002MessageToBankEditTransactionsValidation");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
@@ -496,22 +535,44 @@ public class InwardRemittanceTest extends BaseTest {
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.clickEditTransactions();
 		objInwardRemittanceView.setOpenMasterForFTI();
-		 objIR.clickEditIcon();
-		 objIRGeneralDetails.clickNextButton();
-		 objIRAttachment.Attachment("FileName");
-		 objIRGeneralDetails.clickNextButton();
-		 objIRGeneralDetails.clickSubmitButton();
+		objIR.clickEditIcon();
+		objIRGeneralDetails.clickNextButton();
+		objIRAttachment.Attachment("FileName");
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
 
 	}
 
 	@Title("FCC_CGIRM003MessageToBankEditTransactionsValidation")
 	@Description("VerifyMessageToBankEditTransactionsValidation")
-	@Test(priority = 14, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 17, groups = { "InwardRemittance_Verification" })
 	public void FCC_CGIRM003MessageToBankEditTransactionsValidation() {
 		this.loadTestData("FCC_CGIRM003MessageToBankEditTransactionsValidation");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
@@ -523,39 +584,341 @@ public class InwardRemittanceTest extends BaseTest {
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.clickEditTransactions();
 		objInwardRemittanceView.setOpenMasterForFTI();
-		 objIR.clickEditIcon();
-		 objIRGeneralDetails.clickNextButton();
-		 objIRAttachment.Attachment("FileName");
-		 objIRGeneralDetails.clickNextButton();
-		 objIRGeneralDetails.clickSubmitButton();
-
+		objIR.clickEditIcon();
+		objIRGeneralDetails.clickNextButton();
+		objIRAttachment.Attachment("FileName");
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		// fcc checker
+		objLoginLogoutFlow.doLoginFCCChecker();
+		objIR.checkDetailsAndApprove();
 	}
 
 	@Title("FCC_CGIRM004MessageToBankReviewTransactionsReturn")
 	@Description("MessageToBankReviewTransactionsReturn")
-	@Test(priority = 15, groups = { "InwardRemittance_Verification" })
+	@Test(priority = 28, groups = { "InwardRemittance_Verification" })
 	public void FCC_CGIRM004MessageToBankReviewTransactionsReturn() {
 		this.loadTestData("FCC_CGIRM004MessageToBankReviewTransactionsReturn");
 		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
 			throw new SkipException("Run Mode 'No'");
 		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
 		objCommonFlow.openAUT_URL();
 		objLoginLogoutFlow.doLoginFCC();
 		objCommonFlow.clickOnTradeLink();
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.clickRequestToBankIcon();
-		objIRGeneralDetails.setInstructions("Instruction Message");
+		objIRGeneralDetails.setInstructions("InstructionMessage");
 		objIRGeneralDetails.clickSaveButton();
 		objIRGeneralDetails.clickNextButton();
 		objCommonFlow.navigateToInwardRemittance();
 		objIR.clickEditTransactions();
 		objInwardRemittanceView.setOpenMasterForFTI();
-		 objIR.clickEditIcon();
-		 objIRGeneralDetails.clickNextButton();
-		 objIRAttachment.Attachment("FileName");
-		 objIRGeneralDetails.clickNextButton();
-		 objIRGeneralDetails.clickSubmitButton();
+		objIR.clickEditIcon();
+		objIRGeneralDetails.clickNextButton();
+		objIRAttachment.Attachment("FileName");
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		// fcc checker
+		objLoginLogoutFlow.doLoginFCCChecker();
+		objIR.checkDetailsAndApprove();
 
 	}
 
+	@Title("FCC_CG_IRM_006_PendingIRNotSubmittedRemitttingBankValidation")
+	@Description("PendingIRNotSubmittedRemitttingBankValidation")
+	@Test(priority = 19, groups = { "InwardRemittance_Verification" })
+	public void FCC_CG_IRM_006_PendingIRNotSubmittedRemitttingBankValidation() {
+		this.loadTestData("FCC_CG_IRM_006_PendingIRNotSubmittedRemitttingBankValidation");
+		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
+			throw new SkipException("Run Mode 'No'");
+		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickRequestToBankIcon();
+		objIRGeneralDetails.setInstructions("InstructionMessage");
+		objIRGeneralDetails.clickSaveButton();
+		objIRGeneralDetails.clickNextButton();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickEditTransactions();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objIR.clickEditIcon();
+		objIRGeneralDetails.clickNextButton();
+		objIRAttachment.Attachment("FileName");
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		// fcc checker
+		objLoginLogoutFlow.doLoginFCCChecker();
+		objIR.checkDetailsAndApprove();
+	}
+
+	@Title("FCC_CG_IRM_007_PendingIRReleasedBankApprovedBankValidation")
+	@Description("PendingIRReleasedBankApprovedBankValidation")
+	@Test(priority = 20, groups = { "InwardRemittance_Verification" })
+	public void FCC_CG_IRM_007_PendingIRReleasedBankApprovedBankValidation() {
+		this.loadTestData("FCC_CG_IRM_007_PendingIRReleasedBankApprovedBankValidation");
+		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
+			throw new SkipException("Run Mode 'No'");
+		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickRequestToBankIcon();
+		objIRGeneralDetails.setInstructions("InstructionMessage");
+		objIRGeneralDetails.clickSaveButton();
+		objIRGeneralDetails.clickNextButton();
+		objCommonFlow.navigateToInwardRemittance();
+		objIR.clickEditTransactions();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objIR.clickEditIcon();
+		objIRGeneralDetails.clickNextButton();
+		objIRAttachment.Attachment("FileName");
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		// fcc checker
+		objLoginLogoutFlow.doLoginFCCChecker();
+		objIR.checkDetailsAndApprove();
+	}
+
+	@Title("FCC_CG_IRM_0012_RealisationOfExportBills_Intiation")
+	@Description("RealisationOfExportBills_Intiation")
+	@Test(priority = 21, groups = { "InwardRemittance_Verification" })
+	public void FCC_CG_IRM_0012_RealisationOfExportBills_Intiation() {
+		this.loadTestData("FCC_CG_IRM_0012_RealisationOfExportBills_Intiation");
+		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
+			throw new SkipException("Run Mode 'No'");
+		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToDIInwardRemittance();
+		objIR.clickEditTransactions();
+		objIR.clickEditIcon();
+		testdata = objIRGeneralDetails.getSwiftFT();
+		System.out.println(testdata + "swift ");
+		testdataone = objIRGeneralDetails.getSettledAmount();
+		System.out.println(testdata + "getSettledAmount");
+		objIRGeneralDetails.clickNextButton();
+		objInwardRemittanceView.verifySubProductDisposal();
+		objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
+		objIRGeneralDetails.clickSubmitButton();
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		objIRGeneralDetails.clickNextButton();
+		objIRChargesDebitAdditionalDetails.setChargesDetails("Details");
+		objIRGeneralDetails.clickNextButton();
+		objIRDeclarations.checkAllDeclarationAdvanceReceiptsAgainstExport();
+		objIRGeneralDetails.clickNextButton();
+		objIRAttachment.Attachment("FileName");
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		objIRReview.verifyReviewSection();
+	}
+
+	@Title("FCC_CG_IRM_001_ReceiptsAgainstExport")
+	@Description("ReceiptsAgainstExport")
+	@Test(priority = 22, groups = { "InwardRemittance_Verification" })
+	public void FCC_CG_IRM_0013_ReceiptsAgainstExport() {
+		this.loadTestData("FCC_CG_IRM_0013_ReceiptsAgainstExport");
+		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
+			throw new SkipException("Run Mode 'No'");
+		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToDIInwardRemittance();
+		objIR.clickEditTransactions();
+		objIR.clickEditIcon();
+		testdata = objIRGeneralDetails.getSwiftFT();
+		System.out.println(testdata + "swift ");
+		testdataone = objIRGeneralDetails.getSettledAmount();
+		System.out.println(testdata + "getSettledAmount");
+		objIRGeneralDetails.clickNextButton();
+		objInwardRemittanceView.verifySubProductDisposal();
+		objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
+		objIRGeneralDetails.clickSubmitButton();
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		objIRGeneralDetails.clickNextButton();
+		objIRChargesDebitAdditionalDetails.setChargesDetails("Details");
+		objIRGeneralDetails.clickNextButton();
+		objIRDeclarations.checkAllDeclarationAdvanceReceiptsAgainstExport();
+		objIRGeneralDetails.clickNextButton();
+		objIRAttachment.Attachment("FileName");
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		objIRReview.verifyReviewSection();
+	}
+
+	@Title("FCC_CG_IRM_0014_AdvanceReceiptsAgainstExport")
+	@Description("AdvanceReceiptsAgainstExport")
+	@Test(priority = 23, groups = { "InwardRemittance_Verification" })
+	public void FCC_CG_IRM_0014_AdvanceReceiptsAgainstExport() {
+		this.loadTestData("FCC_CG_IRM_0014_AdvanceReceiptsAgainstExport");
+		if (!this.getObjUtilities().dpString("runmode").equals("Y")) {
+			throw new SkipException("Run Mode 'No'");
+		}
+		// Theme Bridge
+		objCommonFlow.openAUT_URL_ThemeBridge();
+		objInwardRemittanceView.selectMessageTypeFromThemeBridge();
+		objInwardRemittanceView.FileUploadFromThemeBrizge();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		// FTI
+		objCommonFlow.openAUT_URL_FTI();
+		objLoginLogoutFlow.doLoginFTI();
+		objFTI.clickOnZoneList();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnCleanPaymentProcessing();
+		objFTI.clickOnStartButton();
+		objFTI.clickOnMasterBrowserButton();
+		objInwardRemittanceView.setOpenMasterForFTI();
+		objFTI.clickOnRefreshButton();
+		objFTI.clickOnMasterBrowserResult();
+		objFTI.clickOnOpenButton();
+		objFTI.clickOnContinueButton();
+		objInwardRemittanceView.checkSwiftAllDetailsDisplayed();
+		objInwardRemittanceView.FillAllValues();
+		// Fcc
+		objCommonFlow.openAUT_URL();
+		objLoginLogoutFlow.doLoginFCC();
+		objCommonFlow.clickOnTradeLink();
+		objCommonFlow.navigateToDIInwardRemittance();
+		objIR.clickEditTransactions();
+		objIR.clickEditIcon();
+		testdata = objIRGeneralDetails.getSwiftFT();
+		System.out.println(testdata + "swift ");
+		testdataone = objIRGeneralDetails.getSettledAmount();
+		System.out.println(testdata + "getSettledAmount");
+		objIRGeneralDetails.clickNextButton();
+		objInwardRemittanceView.verifySubProductDisposal();
+		objIRDisposalInstructionDetails.verifyFieldValidationPurposeType();
+		objIRGeneralDetails.clickSubmitButton();
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		objIRGeneralDetails.clickNextButton();
+		objIRChargesDebitAdditionalDetails.setChargesDetails("Details");
+		objIRGeneralDetails.clickNextButton();
+		objIRDeclarations.checkAllDeclarationAdvanceReceiptsAgainstExport();
+		objIRGeneralDetails.clickNextButton();
+		objIRAttachment.Attachment("FileName");
+		objIRGeneralDetails.clickNextButton();
+		objIRGeneralDetails.clickSubmitButton();
+		objIRReview.verifyReviewSection();
+	}
 }

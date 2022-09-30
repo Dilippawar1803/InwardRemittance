@@ -107,7 +107,27 @@ public class IRDeclarations {
 	public void clickcheckBox18() {
 		objPojo.getObjUtilities().logReporter("click check Box18",
 				objPojo.getObjWrapperFunctions().click(checkBox18));
-	}   
+	}  
+	public void checkAllDeclarationAdvanceReceiptsAgainstExport() {
+		clickcheckBox1();
+		clickcheckBox2();
+		clickcheckBox3();
+		clickcheckBox4();
+		clickcheckBox5();
+		clickcheckBox6();
+		clickcheckBox7();
+		clickcheckBox8();
+		clickcheckBox9();
+		clickcheckBox10();
+		clickcheckBox11();
+		clickcheckBox12();
+		clickcheckBox13();
+		clickcheckBox14();
+		clickcheckBox15();
+		clickcheckBox16();
+		clickcheckBox17();
+		clickcheckBox18();
+	}  
 	
 	
 }

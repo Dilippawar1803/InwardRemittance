@@ -48,7 +48,7 @@ public class CommonFlow {
 		objLoginPage = new LoginPage(objPojo);
 	}
 	
-	By loc_TradeLink = By.xpath("//span[text()='fyn Trade']");
+	By loc_TradeLink = By.xpath("//div[@class='ui-menubar ui-widget ui-widget-content ui-corner-all']//span[contains(text(),'Trade/ Forex')]");
 	By loc_Iframe = By.xpath("//iframe[@id='knb2ContainerFrame']");
 	By loc_Remittance = By.xpath("(//span[text()='Remittance'])[2]");
 	By loc_InwardRemittance = By.xpath("(//span[text()='Inward Remittance'])[2]");
@@ -58,23 +58,15 @@ public class CommonFlow {
 					
 	public void clickOnTradeLink() {
 		objPojo.getObjUtilities().logReporter("Click 'Trade Link' ",
-				objPojo.getObjWrapperFunctions().scrollToView(loc_TradeLink));
-		objPojo.getObjUtilities().logReporter("Click 'Trade Link' ",
 				objPojo.getObjWrapperFunctions().click(loc_TradeLink));
 	}
 	
 	public void navigateToInwardRemittance() {
-		objPojo.getObjWrapperFunctions().switchToFrameUsingIframeElement(loc_Iframe);
-		objPojo.getObjUtilities().logReporter("Click Inward Remittance",
-				objPojo.getObjWrapperFunctions().click(loc_Remittance));
 		objPojo.getObjUtilities().logReporter("Click DI Inward Remittance",
 				objPojo.getObjWrapperFunctions().click(loc_InwardRemittance));
 	}
 	public void navigateToDIInwardRemittance() {
-		objPojo.getObjWrapperFunctions().switchToFrameUsingIframeElement(loc_Iframe);
-		objPojo.getObjWrapperFunctions().waitFor(10);
-		objPojo.getObjUtilities().logReporter("Click DI Inward Remittance",
-				objPojo.getObjWrapperFunctions().click(loc_Remittance));
+		
 		objPojo.getObjUtilities().logReporter("Click DI Inward Remittance",
 				objPojo.getObjWrapperFunctions().click(loc_DIInwardRemittance));
 	}
